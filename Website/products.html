@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='shortcut icon' type='image/x-icon' href='./img/image3.png' />
+
+    <title>RentIT</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+              <a class="nav-link" href="home.html">Home</a>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact </a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      
+    </header>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">CARS WE OFFER</h1>
+        <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis feugiat sem, et suscipit ipsum. Cras turpis nisi, egestas sed dolor vitae, egestas tincidunt tellus. Maecenas viverra elit in dolor fringilla sodales. Fusce rhoncus euismod tincidunt. Sed pulvinar elit et nulla hendrerit, sit amet lacinia nisi.....</p>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="product.html"  id='productName' title="View Product">Volkswagen polo 1.6 2015</a></h4>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+
+                                
+                            </p>
+                              <button type="button" id="myBtn" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal">
+                                          Open modal
+                                        </button>
+                            <div class="row">
+                                <div class="col">
+                            
+                                        <!-- Button to Open the Modal -->
+                                      
+                                      
+                                        <!-- The Modal -->
+                                        <div class="modal fade" id="myModal">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                            
+                                              <!-- Modal Header -->
+                                              <div class="modal-header">
+                                                <h4 class="modal-title"></h4>
+                                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                              </div>
+                                              
+                                              <!-- Modal body -->
+                                              <div class="modal-body">
+                                                <form >
+                                                        <form  class="form" role="form" autocomplete="off">
+                                                                <div class="form-group row">
+                                                                    <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                                                                    <div class="col-lg-9">
+                                                                        <input class="form-control"  id="name" type="text" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                                                                    <div class="col-lg-9">
+                                                                        <input class="form-control" id="lastname" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                                                                    <div class="col-lg-9">
+                                                                        <input class="form-control" id="email"  value="teset@hotmail.com" type="email" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-lg-3 col-form-label form-control-label">Street and num</label>
+                                                                    <div class="col-lg-9">
+                                                                        <input class="form-control"  id="street" type="text" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-lg-3 col-form-label form-control-label">Zipcode</label>
+                                                                    <div class="col-lg-9">
+                                                                        <input class="form-control" id="zipcode" type="zipcode" value="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-lg-3 col-form-label form-control-label">City</label>
+                                                                    <div class="col-lg-9">
+                                                                        <input class="form-control" id="city" type="text" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-lg-3 col-form-label form-control-label">Telefoon</label>
+                                                                    <div class="col-lg-9">
+                                                                        <input class="form-control"  type="tel"  name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required  >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-lg-3 col-form-label form-control-label">Pick up date </label>
+                                                                    <div class="col-lg-9">
+                                                                        <input class="form-control" id="pickup" type="date" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group row">
+                                                                        <label class="col-lg-3 col-form-label form-control-label">Return date </label>
+                                                                        <div class="col-lg-9">
+                                                                            <input class="form-control"  id="returndate" type="date" >
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                            <label class="col-lg-3 col-form-label form-control-label">Payment</label>
+                                                                            <div class="col-lg-9">
+                                                                                <select id="user_time_zone" id="payment" class="form-control" size="0">
+                                                                                        <option value="" disabled selected>Select your option</option>
+                                                                                    <option value="contant">Contant op locatie</option>
+                                                                                    <option value="card">Per bank overschrijven</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div> 
+                                                                        <div class="form-group row">
+                                                                                <label class="col-lg-3 col-form-label form-control-label">Text</label>
+                                                                                <div class="col-lg-9">
+                                                                                <textarea class="form-control rounded-0" id="info" rows="3"></textarea>
+                                                                              </div> 
+                                                                            </div>
+                                                                <div class="form-group row">
+                                                                    <label class="col-lg-3 col-form-label form-control-label"></label>
+                                                                    <div class="col-lg-9">
+                                                                            <button type="submit" onclick="sendMail()"  class="btn btn-primary">Submit</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                  
+                                                   
+                                                  </form>
+                                              </div>
+                                              
+                                              <!-- Modal footer -->
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                              </div>
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="btn btn-primary btn-block">Reserveer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="btn btn-primary btn-block">Reserveerw</a>
+                                </div>
+                            </div>
+                       
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="btn btn-primary btn-block">Reserveer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="row">
+                              
+                                <div class="col">
+                                    <a href="#" class="btn btn-primary btn-block">Reserveer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="row">
+                               
+                                <div class="col">
+                                    <a href="#" class="btn btn-primary btn-block">Reserveer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+        <button onclick="topFunction()" id="upButton" class="btn"><i class="fa fa-arrow-up fa-lg"></i></button>
+    </div>
+</div>
+<hr class="featurette-divider">
+   <!-- FOOTER -->
+   <footer class="container">
+    <p class="float-right"> <a href="#"></a> </p>
+  
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Products</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+          </ul>
+
+          
+
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <h5>Contact</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-phone "></i> 010-34-123-01</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-at"></i> anni032@hotmail.com</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-whatsapp"></i> 06-18440654</a></li>
+           
+          </ul>
+          
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook fa-lg"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter fa-lg"></i></a></li>
+          <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram fa-lg" ></i></a></li>
+        </div>
+        
+        <div class="col-xs-10 col-sm-3 col-md-3">
+
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="514" height="295" id="gmap_canvas" src="https://maps.google.com/maps?q=Brussel&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/best-wordpress-themes/"></a></div><style>.mapouter{position:relative;text-align:right;height:295px;width:514px;}.gmap_canvas {overflow:hidden;background:none!important;height:295px;width:514px;}</style></div>
+           
+            </ul>
+          </div>
+      </div>
+    </div>
+
+  </div>
+     
+        </hr>
+      </div>	
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+        </div>
+        </hr>
+      </div>	
+    </div>
+  </section>
+  <p>&copy; 2018-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer> 
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  </html>
