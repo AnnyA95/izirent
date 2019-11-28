@@ -20,7 +20,67 @@
   }
 
 
+  let arrLang = {
+    en: {
+        'home' : 'Home',
+        'about' : 'About Us',
+        'contact' : 'Contact US',
+        'com' : 'Comming soon',
+    },
 
+    fr: {
+        'home' : 'Massion',
+        'about' : 'sobre nosotros',
+        'contact' : 'Contáctenos',
+        'com' : 'Comming soon',
+    },
+    nl: {
+      'home' : 'Thuis',
+      'about' : 'sobre nosotros',
+      'contact' : 'Contáctenos',
+      'com' : 'Binnen kort beschikbaar',
+  }
+}
+
+$(function() {
+let lang =localStorage.getItem('language');
+changeLanguage(lang);
+
+
+$('.translate').click(function(){
+ lang = $(this).attr('id');
+ localStorage.setItem('language', lang);
+ changeLanguage(lang);
+});
+
+function changeLanguage(lang){
+  console.log
+$('#lang').each(function(index,element){
+     $(this).text(arrLang[lang][$(this).attr('key')]);
+ }); 
+}
+
+})
+  
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
  
 
   
