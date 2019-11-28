@@ -55,7 +55,7 @@ $('.translate').click(function(){
 
 function changeLanguage(lang){
   console.log
-$('#lang').each(function(index,element){
+$('.lang').each(function(index,element){
      $(this).text(arrLang[lang][$(this).attr('key')]);
  }); 
 }
