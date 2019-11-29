@@ -211,3 +211,15 @@ nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
 }
 
 }
+
+
+/*Logo width mobile */
+img.logo {
+  width: 85px;
+}
+
+@media screen and (max-width: 600px) {
+  img.logo {
+    width: 90px;
+  }
+}

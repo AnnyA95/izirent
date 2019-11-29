@@ -82,7 +82,7 @@ window.onclick = function(event) {
 }
  
 
-  
+
 
   $(document).ready(function(){
     $("#myBtn").click(function(){
@@ -129,7 +129,7 @@ window.onclick = function(event) {
 };
 
 function redirect() {
-  location.replace("file:///Users/annyaidinian/Desktop/Website/confirmation.html")
+  location.replace("/Users/annyaidinian/Desktop/GitHub/izirent/Website/confirmation.html")
 }
 
 
