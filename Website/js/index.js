@@ -30,14 +30,14 @@
 
     fr: {
         'home' : 'Massion',
-        'about' : 'sobre nosotros',
-        'contact' : 'Contáctenos',
-        'com' : 'Comming soon',
+        'about' : 'need text',
+        'contact' : 'need text',
+        'com' : 'need text',
     },
     nl: {
       'home' : 'Thuis',
-      'about' : 'sobre nosotros',
-      'contact' : 'Contáctenos',
+      'about' : 'Over ons',
+      'contact' : 'Contact',
       'com' : 'Binnen kort beschikbaar',
   }
 }
@@ -47,6 +47,7 @@ let lang =localStorage.getItem('language');
 changeLanguage(lang);
 
 
+
 $('.translate').click(function(){
  lang = $(this).attr('id');
  localStorage.setItem('language', lang);
@@ -54,8 +55,7 @@ $('.translate').click(function(){
 });
 
 function changeLanguage(lang){
-  console.log
-$('.lang').each(function(index,element){
+$('.lang').each(function(){
      $(this).text(arrLang[lang][$(this).attr('key')]);
  }); 
 }
@@ -63,8 +63,7 @@ $('.lang').each(function(index,element){
 })
   
 
-
-function myFunction() {
+function getLanguage() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 

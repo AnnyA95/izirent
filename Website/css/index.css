@@ -204,4 +204,10 @@ hr#second {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
+  padding-bottom: 10px;
+  font-size: large;
+  font-style: italic;
+}
+
 }
