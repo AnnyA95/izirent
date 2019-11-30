@@ -23,6 +23,7 @@
     
     <!-- Custom styles for this template -->
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/cars.css" rel="stylesheet">
   </head>
   <body>
   <header>
@@ -70,219 +71,79 @@
         <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis feugiat sem, et suscipit ipsum. Cras turpis nisi, egestas sed dolor vitae, egestas tincidunt tellus. Maecenas viverra elit in dolor fringilla sodales. Fusce rhoncus euismod tincidunt. Sed pulvinar elit et nulla hendrerit, sit amet lacinia nisi.....</p>
     </div>
 </section>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col">
+           
+            <br>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html"  id='productName' title="View Product">Volkswagen polo 1.6 2015</a></h4>
-                            <p  class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
 
-                                
-                            </p>
-                              <button type="button" id="myBtn" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal">
-                                          Open modal
-                                        </button>
-                            <div class="row">
-                                <div class="col">
-                            
-                                        <!-- Button to Open the Modal -->
-                                      
-                                      
-                                        <!-- The Modal -->
-                                        <div class="modal fade" id="myModal">
-                                          <div class="modal-dialog">
-                                            <div class="modal-content">
-                                            
-                                              <!-- Modal Header -->
-                                              <div class="modal-header">
-                                                <h4 class="modal-title"></h4>
-                                                <button type="button" class="close" data-dismiss="modal">×</button>
-                                              </div>
-                                              
-                                              <!-- Modal body -->
-                                              <div class="modal-body">
-                                                <form >
-                                                        <form  class="form" role="form" autocomplete="off">
-                                                                <div class="form-group row">
-                                                                    <label class="col-lg-3 col-form-label form-control-label">First name</label>
-                                                                    <div class="col-lg-9">
-                                                                        <input class="form-control"  id="name" type="text" >
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-lg-3 col-form-label form-control-label">Last name</label>
-                                                                    <div class="col-lg-9">
-                                                                        <input class="form-control" id="lastname" type="text">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-lg-3 col-form-label form-control-label">Email</label>
-                                                                    <div class="col-lg-9">
-                                                                        <input class="form-control" id="email"  value="teset@hotmail.com" type="email" >
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-lg-3 col-form-label form-control-label">Street and num</label>
-                                                                    <div class="col-lg-9">
-                                                                        <input class="form-control"  id="street" type="text" value="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-lg-3 col-form-label form-control-label">Zipcode</label>
-                                                                    <div class="col-lg-9">
-                                                                        <input class="form-control" id="zipcode" type="zipcode" value="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-lg-3 col-form-label form-control-label">City</label>
-                                                                    <div class="col-lg-9">
-                                                                        <input class="form-control" id="city" type="text" >
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-lg-3 col-form-label form-control-label">Telefoon</label>
-                                                                    <div class="col-lg-9">
-                                                                        <input class="form-control"  type="tel"  name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required  >
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-lg-3 col-form-label form-control-label">Pick up date </label>
-                                                                    <div class="col-lg-9">
-                                                                        <input class="form-control" id="pickup" type="date" >
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group row">
-                                                                        <label class="col-lg-3 col-form-label form-control-label">Return date </label>
-                                                                        <div class="col-lg-9">
-                                                                            <input class="form-control"  id="returndate" type="date" >
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-group row">
-                                                                            <label class="col-lg-3 col-form-label form-control-label">Payment</label>
-                                                                            <div class="col-lg-9">
-                                                                                <select id="user_time_zone" id="payment" class="form-control" size="0">
-                                                                                        <option value="" disabled selected>Select your option</option>
-                                                                                    <option value="contant">Contant op locatie</option>
-                                                                                    <option value="card">Per bank overschrijven</option>
-                                                                                </select>
-                                                                            </div>
-                                                                        </div> 
-                                                                        <div class="form-group row">
-                                                                                <label class="col-lg-3 col-form-label form-control-label">Text</label>
-                                                                                <div class="col-lg-9">
-                                                                                <textarea class="form-control rounded-0" id="info" rows="3"></textarea>
-                                                                              </div> 
-                                                                            </div>
-                                                                <div class="form-group row">
-                                                                    <label class="col-lg-3 col-form-label form-control-label"></label>
-                                                                    <div class="col-lg-9">
-                                                                            <button type="submit" onclick="sendMail()"  class="btn btn-primary">Submit</button>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                  
-                                                   
-                                                  </form>
-                                              </div>
-                                              
-                                              <!-- Modal footer -->
-                                              <div class="modal-footer">
-                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                              </div>
-                                              
-                                            </div>
-                                          </div>
-                                        </div>
-                                        
-                                     
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <img class="foto" src="http://izirent.nl/wp-content/uploads/2018/10/mercedes_vito2.png">
+                      <h2>
+                            Mercedes Vito 9 persoons</h2>
+                      <p class="price">€75.00</p>
+                      
+                      <div class="info">
                             <div class="row">
-                                <div class="col">
-                                    <a href="#" class="btn btn-primary btn-block">Reserveer</a>
-                                </div>
-                            </div>
-                        </div>
+                                    <div class=" col-xs-6 col-sm-4">
+                                        <li class="list">
+                                            <i ><img  src="./img/ico_personen.png"></i> 
+                                            <span>Zitplaatsen 9</span></li>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4">
+                                            <li class="list">
+                                                    <i ><img  src="./img/ico_personen.png"></i> 
+                                                    <span>Zitplaatsen 9</span></li>
+                                    </div>
+                                    <!-- Optional: clear the XS cols if their content doesn't match in height -->
+                                    <div class="clearfix visible-xs-block"></div>
+                                    <div class="col-xs-6 col-sm-4"> <li class="list">
+                                            <i ><img  src="./img/ico_personen.png"></i> 
+                                            <span>Zitplaatsen 9</span></li></div>
+                                  </div>
+                                  <div class="row">
+                                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                                        <!-- Optional: clear the XS cols if their content doesn't match in height -->
+                                        <div class="clearfix visible-xs-block"></div>
+                                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                                      </div>
+                      </div>
+                      <br/>
+                      <p><button>Reserveer</button></p>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="#" class="btn btn-primary btn-block">Reserveerw</a>
-                                </div>
-                            </div>
-                       
-                        </div>
-                    </div>
-                    <br/>
-                </div>
-                
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="#" class="btn btn-primary btn-block">Reserveer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="row">
-                              
-                                <div class="col">
-                                    <a href="#" class="btn btn-primary btn-block">Reserveer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div class="row">
-                               
-                                <div class="col">
-                                    <a href="#" class="btn btn-primary btn-block">Reserveer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
               
             </div>
+            <br>
+            <div class="row">
+
+                    <div class="card">
+                      <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+                      <h1>Tailored Jeans</h1>
+                      <p class="price">$19.99</p>
+                      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                      <p><button>Add to Cart</button></p>
+                    </div>
+              
+            </div>
+
+            <div class="row">
+                    
+                    <div class="col-md-12 col-sm-12">
+                            <div class="row">
+
+                                    <div class="card">
+                                      <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+                                      <h1>Tailored Jeans</h1>
+                                      <p class="price">$19.99</p>
+                                      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                                      <p><button>Add to Cart</button></p>
+                                    </div>
+                              
+                            </div>  
+                    </div>
+                   </div>
         </div>
         <button onclick="topFunction()" id="upButton" class="btn"><i class="fa fa-arrow-up fa-lg"></i></button>
     </div>
