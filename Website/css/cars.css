@@ -1,11 +1,14 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 1300px;
+    max-width: 1300px ;
+  
     margin: auto;
     text-align: center;
     font-family: arial;
     
   }
+  
+
   
   .price {
     color: grey;
@@ -33,7 +36,7 @@
   }
 
   .foto{
-    width: 44%;
+    width: 41%;
     align-self: center;
 }
 
@@ -42,6 +45,17 @@
     
 }
 
+
+
+.foto2{
+    width: 44%;
+    align-self: center;
+}
+
+.foto3{
+    width: 53%;
+    align-self: center;
+}
 
 
 
