@@ -409,6 +409,19 @@ and (-webkit-device-pixel-ratio : 3) {
     overflow: hidden;
     background: none !important;
     height: 295px;
-    width: 314px;
+    width: 334px;
   }
+}
+
+
+ @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+  nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
+  
+    border-radius: 0px;
+ 
+
+}
 }
