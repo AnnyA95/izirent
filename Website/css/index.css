@@ -302,6 +302,7 @@ img.logo {
     border-radius: 4px;
   }
 
+ 
 
 }
 
@@ -323,5 +324,91 @@ div.photo_leftPanel > img {
 
 
 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 295px;
+    width: 214px;
+  }
+  
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 295px;
+    width: 314px;
+  }
 
 
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 295px;
+    width: 314px;
+  }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 295px;
+    width: 414px;
+  }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { 
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 295px;
+    width: 314px;
+  }
+
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { 
+
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 295px;
+    width: 314px;
+  }
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { 
+   .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 295px;
+    width: 314px;
+  }
+}
