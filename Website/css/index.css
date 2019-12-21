@@ -2,11 +2,7 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -210,6 +206,10 @@ nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
   font-style: italic;
 }
 
+.navbar {
+  border-radius: 0px;
+}
+
 }
 
 
@@ -223,3 +223,13 @@ img.logo {
     width: 90px;
   }
 }
+
+img.logo {
+  width: 85px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+

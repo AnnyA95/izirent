@@ -24,14 +24,19 @@
     <!-- Custom styles for this template -->
     <link href="css/index.css" rel="stylesheet">
     <link href="css/cars.css" rel="stylesheet">
+    <link href="./flag-icon-css-master/css/flag-icon.css" rel="stylesheet">
   </head>
   <body>
   <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand"></a>
-                    <a href="home.html">  <img class="logo" onclick="goToHome()" src="./img/1200px-Free_logo.svg.png" alt="home"></a>
+            <a class="navbar-brand">
+      
+              <a href="home.html">  <img class="logo" onclick="goToHome()" src="./img/1200px-Free_logo.svg.png" alt="home"></a>
+              
+            </a>
                  
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -47,30 +52,33 @@
                   <a class="nav-link" href="contact.html">Contact </a>
               </li>
           </ul>
-
-          <div class="collapse navbar-collapse" id="navbarCollapse"></div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-           
-            <button  onclick="getLanguage()" id="dropbtn" class="btn btn-secondary"> <i class="fa far fa-bars fa-lg"></i>
-              
-              <div id="myDropdown"  class="dropdown-content">
-                <a  class="translate" id="en" class="btn btn-info" role="button">English</a>
-                <a  class="translate" id="fr" class="btn btn-info" role="button">Frans</a>
-                <a  class="translate" id="nl" class="btn btn-info" role="button">Nederlands</a>
           
-             
-            </div>
-          </button>
+          <div id="photo_leftPanel">
+     
+         </div>
+        
+           
+            <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
+              <i  id="test"></i>
+   
+             <div id="myDropdown" class="dropdown-content">
+               <a class="translate" id="fr" class="btn btn-info" role="button">Français</a>
+               <a class="translate" id="nl" class="btn btn-info" role="button">Nederlands</a>
+               <a class="translate" id="eng" class="btn btn-info" role="button">English</a>
+               
+   
+   
+   
+             </div>
+           </button>
         </div>
       </nav>
       
     </header>
-<section class="jumbotron text-center">
-    <div class="container">
-        <h1 class="jumbotron-heading">CARS WE OFFER</h1>
-        <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis feugiat sem, et suscipit ipsum. Cras turpis nisi, egestas sed dolor vitae, egestas tincidunt tellus. Maecenas viverra elit in dolor fringilla sodales. Fusce rhoncus euismod tincidunt. Sed pulvinar elit et nulla hendrerit, sit amet lacinia nisi.....</p>
-    </div>
-</section>
+  <br/>
+  <br/>
+  <br/>
+  
 <div class="container">
             <br>
             <div class="row">
@@ -167,7 +175,7 @@
                                               </div>
                               </div>
                               <br/>
-                              <p><button>Reserveer</button></p>
+                             <p><button onclick="location.href='./car.html'" >Reserveer </button ></p>
                               
                             </div>
                       
@@ -224,7 +232,8 @@
                                           </div>
                           </div>
                           <br/>
-                          <p><button>Reserveer</button></p>
+                          <p><button onclick="location.href=''"  >Reserveer </button ></p>
+                        
                           
                         </div>
                   

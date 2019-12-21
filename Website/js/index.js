@@ -16,7 +16,7 @@
 
   var body = $('html, body');
   function go() {
-    body.animate({ scrollTop: $("#cars-section").offset().top }, "slow");
+    body.animate({ scrollTop: $("#gohere").offset().top - 370  }, "slow");
   }
 
 
@@ -90,3 +90,6 @@ function emailValidate(email){
       else return false;
   else return false;
 }
+
+
+
