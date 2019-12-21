@@ -93,3 +93,10 @@ function emailValidate(email){
 
 
 
+
+
+
+function checkImageForCriticality(){
+  pagespeed.CriticalImages.checkImageForCriticality(this);
+}
+

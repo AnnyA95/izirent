@@ -1,0 +1,374 @@
+@media (min-width: 768px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/*________________________ Listing page _________________________*/
+
+.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  height: 275px;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+}
+.listing-details-title span {
+  font-size: 17px !important;
+}
+
+.rq-car-listing-wrapper
+  .rq-listing-choose.rq-listing-list-two
+  .listing-single
+  .listing-details
+  .listing-details-title
+  .car-name {
+  width: 75% !important;
+}
+
+.rq-car-listing-wrapper
+  .rq-listing-choose.rq-listing-list-two
+  .listing-single
+  .listing-details
+  .listing-footer
+  .btn-wrapper
+  .book-now-btn
+  a:hover {
+  border-bottom: none;
+}
+
+.rq-car-listing-wrapper
+  .rq-listing-choose.rq-listing-list-two
+  .listing-single
+  .listing-details
+  .listing-details-title
+  span
+  .price {
+  font-size: 30px !important;
+}
+
+.listing-single .listing-details .listing-footer span a:hover {
+  border-color: #2da5e9 !important;
+}
+
+.rq-car-listing-wrapper .listing-single .listing-img img {
+  height: auto !important;
+  padding: 30px 0;
+  display: block;
+  margin: auto;
+  width: 300px !important;
+}
+
+.rq-main-footer .footer-widget h4.widget-title {
+  color: white !important;
+  margin: 5px 0;
+}
+
+.listing-single .listing-details .listing-footer span .price .amount {
+  color: #868686 !important;
+}
+
+.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single {
+  height: auto !important;
+}
+
+.rq-listing-grid .product-type-redq_rental .listing-single .listing-img {
+  width: 35%;
+  display: inline-block;
+}
+
+.rq-listing-grid .product-type-redq_rental .listing-single .listing-details {
+  display: inline-block;
+  width: 60%;
+}
+
+.rq-listing-promo-wrapper .rq-listing-promo-content .rq-listing-item {
+  width: 50% !important;
+}
+
+.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-1 {
+  width: 30%;
+}
+
+.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-img {
+  width: 35% !important;
+}
+
+.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-2 {
+  width: 30%;
+  border: 1px solid #8080807d;
+  padding: 10px;
+  margin-right: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.rq-car-listing-wrapper
+  .rq-listing-choose.rq-listing-list-two
+  .listing-single
+  .listing-details-2
+  .listing-details-2-price-block
+  .price-per-day {
+  font-size: 18px;
+  color: black;
+}
+
+.listing-details-2 .listing-header {
+}
+
+.listing-details-2 .listing-footer {
+  text-align: center;
+  background-color: orange;
+  padding: 5px 0;
+  margin-left: 15px;
+  font-size: 11px;
+}
+
+.listing-details-2 .listing-footer a {
+  color: white;
+}
+
+.listing-details-2 .listing-header h4 {
+  margin: 8px 0;
+  color: orange;
+  font-size: large;
+}
+
+.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single {
+  display: flex;
+  align-items: center;
+}
+
+.listing-details-1 .listing-attribute {
+  padding-left: 0 !important;
+}
+
+.listing-details-1 .listing-attribute li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 16px;
+  width: 44%;
+}
+
+.listing-details-1 .listing-attribute li span {
+  margin-left: 5px;
+  float: left;
+}
+
+.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .tb-find-a-car .listing-details-2 {
+  border: none;
+}
+
+.tb-find-a-car .listing-details-2 .listing-footer {
+  margin: auto;
+  margin-right: 0;
+}
+
+.listing-details-2 .listing-header {
+  width: 60%;
+  /*margin-left: 10px;*/
+}
+
+.listing-details-2 .listing-footer {
+  width: 40%;
+}
+
+/*_________________ Responsive design _____________________*/
+
+@media (max-width: 991px) {
+  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single {
+    display: block !important;
+  }
+
+  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-img {
+    width: 100% !important;
+  }
+
+  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-1 {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-2 {
+    width: 50% !important;
+    margin: 20px auto;
+  }
+
+  /*Listing page*/
+  .tb-find-a-car .listing-details-2 .listing-footer {
+    margin: auto;
+  }
+}
+
+@media (max-width: 648px) {
+  .front-page-img-button-block .front-page-img h2 {
+    font-size: 18px;
+    top: 8px;
+  }
+
+  .front-page-img-button-block .front-page-button {
+    top: 77px;
+  }
+
+  .front-page-img-button-block .front-page-button > button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .listing-details-1 .listing-attribute {
+    padding-left: 20px !important;
+  }
+  .listing-details-1 .listing-attribute li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .listing-details-1 .listing-attribute {
+    width: 50%;
+    margin: auto;
+    padding-left: 60px !important;
+  }
+
+  .listing-details-1 .listing-attribute li {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-2 {
+    width: 90% !important;
+    border: none;
+  }
+
+  .listing-details-1 .listing-attribute {
+    width: 50%;
+    margin: auto;
+    padding-left: 20px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  /*________ Header_____ */
+  .header .header-body {
+    padding-top: 25px !important;
+  }
+
+  header.header .header-body h1 {
+    font-size: 25px !important;
+  }
+
+  /*________ Front page_____ */
+  .front-page-img-button-block .front-page-img h2 {
+    font-size: 16px;
+    top: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .front-page-img-button-block .front-page-button {
+    top: 57px;
+  }
+
+  .front-page-img-button-block .front-page-button > button {
+    font-size: 11px;
+  }
+
+  body.single-product .resource-block {
+    height: 60px;
+  }
+
+  /*________ Single page _____ */
+  .rq-car-listing-wrapper
+    .rq-listing-choose.rq-listing-list-two
+    .listing-single
+    .listing-details
+    .listing-details-title
+    .car-name {
+    font-size: 18px !important;
+    width: 100% !important;
+  }
+
+  .rq-car-listing-wrapper
+    .rq-listing-choose.rq-listing-list-two
+    .listing-single
+    .listing-details
+    .listing-details-title
+    span
+    .price {
+    font-size: 24px !important;
+  }
+
+  .rq-car-listing-wrapper .listing-single .listing-details-title {
+    display: block !important;
+  }
+}
+
+.redq-variations table tr td:first-child {
+  width: 26px;
+}
+
+.redq-variations .label_more_7 {
+  display: none;
+}
+
+.listing-attribute i {
+  width: 21px;
+  text-align: center;
+  float: left;
+}
+
+.listing-attribute i:before,
+.rq-listing-promo-content i:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.listing-attribute .fa-airco:before,
+.rq-listing-promo-content .fa-airco:before {
+  background-image: url('../img/ico_aircop.png');
+}
+
+.listing-attribute .fa-disel:before,
+.rq-listing-promo-content .fa-disel:before {
+  background-image: url('../img/ico_brandstofp.png');
+}
+
+.listing-attribute .fa-door:before,
+.rq-listing-promo-content .fa-door:before {
+  background-image: url('../img/ico_deurp.png');
+}
+
+.listing-attribute .fa-koffers:before,
+.rq-listing-promo-content .fa-koffers:before {
+  background-image: url('../img/ico_kofferp.png');
+}
+
+.listing-attribute .fa-passenger:before,
+.rq-listing-promo-content .fa-passenger:before {
+  background-image: url('../img/ico_personenp.png');
+}
+
+.listing-attribute .fa-schakel:before,
+.rq-listing-promo-content .fa-schakel:before {
+  background-image: url('../img/ico_schakelp.png');
+}
+
+.listing-single {
+  transition: box-shadow 0.3s;
+}
+.listing-single:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+
+h3.car-name a {
+    color: #ff8a00;
+}

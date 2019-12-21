@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
+
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel='shortcut icon' type='image/x-icon' href='./img/image3.png' />
@@ -12,304 +13,253 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js/translate.js"></script>
-    
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <!-- Custom styles for this template -->
     <link href="css/index.css" rel="stylesheet">
-    <link href="css/cars.css" rel="stylesheet">
+    <link href="css/products.css" rel="stylesheet">
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
     <link href="./flag-icon-css-master/css/flag-icon.css" rel="stylesheet">
-  </head>
-  <body>
-  <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand">
-      
-              <a href="home.html">  <img class="logo" onclick="goToHome()" src="./img/1200px-Free_logo.svg.png" alt="home"></a>
-              
+
+                <a href="home.html"> <img class="logo" onclick="goToHome()" src="./img/1200px-Free_logo.svg.png" alt="home"></a>
+
             </a>
-                 
-                 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-                <a class="nav-link" href="home.html"></a>
-            <li class="nav-item">
-              <a  class="nav-link" href="products.html">Products</a>
-            </li>
-            <li class="nav-item">
-                    <a class="nav-link" href="contact.html">About us </a>
-                </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact </a>
-              </li>
-          </ul>
-          
-          <div id="photo_leftPanel">
-     
-         </div>
-        
-           
-            <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
-              <i  id="test"></i>
-   
-             <div id="myDropdown" class="dropdown-content">
-               <a class="translate" id="fr" class="btn btn-info" role="button">Français</a>
-               <a class="translate" id="nl" class="btn btn-info" role="button">Nederlands</a>
-               <a class="translate" id="eng" class="btn btn-info" role="button">English</a>
-               
-   
-   
-   
-             </div>
-           </button>
-        </div>
-      </nav>
-      
-    </header>
-  <br/>
-  <br/>
-  <br/>
-  
-<div class="container">
-            <br>
-            <div class="row">
-                
-                    <div class="card">
-                            <img class="foto" src="./img/vw_transporter-1_796x479 (1) kopie.png">
-                          
-                          
-                            <h2>
-                          
-                            Volkswagen 9 persoons</h2>
-                      <p class="price">€75.00</p>
-                      
-                      <div class="info">
-                            <div class="row">
-                                    <div class=" col-xs-6 col-sm-4">
-                                        <li class="list">
-                                            <i ><img  src="./img/ico_personen.png"></i> 
-                                            <span>Zitplaatsen 9</span></li>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-4">
-                                            <li class="list">
-                                                    <i ><img  src="./img/ico_brandstof.png"></i> 
-                                                    <span>Diesel</span></li>
-                                    </div>
-                                    <!-- Optional: clear the XS cols if their content doesn't match in height -->
-                                    <div class="clearfix visible-xs-block"></div>
-                                    <div class="col-xs-6 col-sm-4"> <li class="list">
-                                            <i ><img  src="./img/ico_schakel.png"></i> 
-                                            <span>Automaat</span></li></div>
-                                  </div>
-                                  <div class="row">
-                                        <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                <i ><img  src="./img/ico_airco.png"></i> 
-                                                <span>Met airco</span></li></div>
-                                                <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                        <i ><img  src="./img/ico_koffer.png"></i> 
-                                                        <span>Koffers</span></li></div>
-                                        <!-- Optional: clear the XS cols if their content doesn't match in height -->
-                                        <div class="clearfix visible-xs-block"></div>
-                                        <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                <i ><img  src="./img/ico_deur.png"></i> 
-                                                <span>Deuren 4</span></li></div>
-                                      </div>
-                      </div>
-                      <br/>
-                      <p><button>Reserveer</button></p>
-                      
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <a class="nav-link" href="home.html"></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">About us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact </a>
+                    </li>
+                </ul>
+
+                <div id="photo_leftPanel">
+
+                </div>
+
+                <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
+                    <i id="test"></i>
+
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class="translate" id="fr" class="btn btn-info" role="button">Français</a>
+                        <a class="translate" id="nl" class="btn btn-info" role="button">Nederlands</a>
+                        <a class="translate" id="eng" class="btn btn-info" role="button">English</a>
+
                     </div>
-              
+                </button>
             </div>
+        </nav>
 
-            <div class="container">
-   
-                    <br>
-                    <div class="row">
-        
-                            <div class="card">
-                                    <img class="foto2" src="./img/mercedes_vito2.png">
-                              <h2>
-                                    Mercedes Vito 9 persoons</h2>
-                              <p class="price">€75.00</p>
-                              
-                              <div class="info">
-                                    <div class="row">
-                                            <div class=" col-xs-6 col-sm-4">
-                                                <li class="list">
-                                                    <i ><img  src="./img/ico_personen.png"></i> 
-                                                    <span>Zitplaatsen 9</span></li>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-4">
-                                                    <li class="list">
-                                                            <i ><img  src="./img/ico_brandstof.png"></i> 
-                                                            <span>Diesel</span></li>
-                                            </div>
-                                            <!-- Optional: clear the XS cols if their content doesn't match in height -->
-                                            <div class="clearfix visible-xs-block"></div>
-                                            <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                    <i ><img  src="./img/ico_schakel.png"></i> 
-                                                    <span>Automaat</span></li></div>
-                                          </div>
-                                          <div class="row">
-                                                <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                        <i ><img  src="./img/ico_airco.png"></i> 
-                                                        <span>Met airco</span></li></div>
-                                                        <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                                <i ><img  src="./img/ico_koffer.png"></i> 
-                                                                <span>Koffers</span></li></div>
-                                                <!-- Optional: clear the XS cols if their content doesn't match in height -->
-                                                <div class="clearfix visible-xs-block"></div>
-                                                <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                        <i ><img  src="./img/ico_deur.png"></i> 
-                                                        <span>Deuren 4</span></li></div>
-                                              </div>
-                              </div>
-                              <br/>
-                             <p><button onclick="location.href='./car.html'" >Reserveer </button ></p>
-                              
-                            </div>
-                      
-                    </div>
-       
-        </div>
-        <button onclick="topFunction()" id="upButton" class="btn"><i class="fa fa-arrow-up fa-lg"></i></button>
-    </div>
-</div>
+    </header>
+    <br/>
+    <br/>
+    <div class="container">
+        <div class="rq-car-listing-wrapper">
 
-<div class="container-fluid">
-        <div class="row">
-            <div class="col">
-               
-                <br>
+            <div class="test rq-listing-choose rq-listing-list-two">
                 <div class="row">
-    
-                        <div class="card">
-                                <img class="foto3" src="./img/mercedes_v-klasse kopie.png">
-                          <h2>
-                                Mercedes  9 persoons</h2>
-                          <p class="price">€75.00</p>
-                          
-                          <div class="info">
-                                <div class="row">
-                                        <div class=" col-xs-6 col-sm-4">
-                                            <li class="list">
-                                                <i ><img  src="./img/ico_personen.png"></i> 
-                                                <span>Zitplaatsen 9</span></li>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-4">
-                                                <li class="list">
-                                                        <i ><img  src="./img/ico_brandstof.png"></i> 
-                                                        <span>Diesel</span></li>
-                                        </div>
-                                        <!-- Optional: clear the XS cols if their content doesn't match in height -->
-                                        <div class="clearfix visible-xs-block"></div>
-                                        <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                <i ><img  src="./img/ico_schakel.png"></i> 
-                                                <span>Automaat</span></li></div>
-                                      </div>
-                                      <div class="row">
-                                            <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                    <i ><img  src="./img/ico_airco.png"></i> 
-                                                    <span>Met airco</span></li></div>
-                                                    <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                            <i ><img  src="./img/ico_koffer.png"></i> 
-                                                            <span>Koffers</span></li></div>
-                                            <!-- Optional: clear the XS cols if their content doesn't match in height -->
-                                            <div class="clearfix visible-xs-block"></div>
-                                            <div class="col-xs-6 col-sm-4"> <li class="list">
-                                                    <i ><img  src="./img/ico_deur.png"></i> 
-                                                    <span>Deuren 4</span></li></div>
-                                          </div>
-                          </div>
-                          <br/>
-                          <p><button onclick="location.href=''"  >Reserveer </button ></p>
-                        
-                          
+
+                    <div class="test col-md-12 col-sm-12">
+                        <div class="listing-single">
+                            <div class="listing-img dina">
+                                <a href=""><img src="./img/mercedes_vito2.png" alt="car"></a>
+                            </div>
+                            <div class="listing-details-1">
+                                <div class="listing-details-title">
+                                    <h3 class="car-name"><a href="https://www.izihuren.nl/product/range-rover-evoque?">Mercedes Vito </a></h3></div>
+
+                                <ul class="listing-attribute">
+
+                                    <li><i class="fa fa-passenger"></i> <span>Zitplaatsen 5</span></li>
+
+                                    <li><i class="fa fa-airco"></i> <span>Met airco</span></li>
+
+                                    <li><i class="fa fa-disel"></i> <span>Diesel</span></li>
+
+                                    <li><i class="fa fa-koffers"></i> <span>Koffers 5</span></li>
+
+                                    <li><i class="fa fa-schakel"></i> <span>Automaat</span></li>
+
+                                    <li><i class="fa fa-door"></i> <span>Deuren 4</span></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="listing-details-2">
+                                <div class="listing-header">
+                                    <h4>Het beste tarief, vanaf:</h4>
+                                    <div class="listing-details-2-price-block">
+                                        <span class="price-per-day">€ <span class="price">75</span>, per dag</span>
+                                        <br>
+                                        <span>Totaasl <span class="price">75.00</span> € </span>
+                                    </div>
+                                </div>
+
+                                <div class="listing-footer">
+                                    <div class="btn-wrapper">
+                                        <span class="book-now-btn"><a href="">RESERVEER NU</a></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                  
+                    </div>
+
+                     <div class=" col-md-12 col-sm-12">
+                        <div class="listing-single">
+                            <div class="listing-img dina">
+                                <a  href=""><img src="./img/vw_transporter-1_796x479 (1) kopie.png" alt="car"></a >
+                            </div>
+                            <div class="listing-details-1">
+                                <div class="listing-details-title">
+                                    <h3 class="car-name"><a href="">Volkswagen Transporter </a></h3></div>
+
+                                <ul class="listing-attribute">
+
+                                    <li><i class="fa fa-passenger"></i> <span>Zitplaatsen 5</span></li>
+
+                                    <li><i class="fa fa-airco"></i> <span>Met airco</span></li>
+
+                                    <li><i class="fa fa-disel"></i> <span>Diesel</span></li>
+
+                                    <li><i class="fa fa-koffers"></i> <span>Koffers 5</span></li>
+
+                                    <li><i class="fa fa-schakel"></i> <span>Automaat</span></li>
+
+                                    <li><i class="fa fa-door"></i> <span>Deuren 4</span></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="listing-details-2">
+                                <div class="listing-header">
+                                    <h4>Het beste tarief, vanaf:</h4>
+                                    <div class="listing-details-2-price-block">
+                                        <span class="price-per-day">€ <span class="price">75</span>, per dag</span>
+                                        <br>
+                                        <span>Totaasl <span class="price">75.00</span> € </span>
+                                    </div>
+                                </div>
+
+                                <div class="listing-footer">
+                                    <div class="btn-wrapper">
+                                        <span class="book-now-btn"><a href="">RESERVEER NU</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                    <button onclick="topFunction()" id="upButton" class="btn"><i class="fa fa-arrow-up fa-lg"></i></button>
                 </div>
             </div>
-                <br>
-                
-            </div>
-            <button onclick="topFunction()" id="upButton" class="btn"><i class="fa fa-arrow-up fa-lg"></i></button>
+
+
+
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
         </div>
+        <!-- /.container -->
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right">
+                <a href="#"></a>
+            </p>
+
+            <section id="footer">
+                <div class="container">
+                    <div class="row text-center text-xs-center text-sm-left text-md-left">
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <h5>Quick links</h5>
+                            <ul class="list-unstyled quick-links">
+                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Products</a></li>
+                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3">
+                            <h5>Contact</h5>
+                            <ul class="list-unstyled quick-links">
+                                <li><a href="javascript:void();"><i class="fa fa-phone "></i> +32 488.27.71.08</a></li>
+                                <li><a href="javascript:void();">+32 486.15.56.75</a></li>
+                                <li><a href="javascript:void();"><i class="fa fa-at"></i> Izirent@gmail.be</a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=320488277108&text=I%20want%20to%20find%20out%20about%20your%20products"><i
+                class="fa fa-whatsapp"></i> 06-18440654</a></li>
+
+                            </ul>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook fa-lg"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter fa-lg"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram fa-lg"></i></a>
+                            </li>
+                        </div>
+
+                        <div class="col-xs-10 col-sm-3 col-md-3">
+
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="514" height="295" id="gmap_canvas" src="https://maps.google.com/maps?q=Rue%20de%20la%20cuve%2027%2C%201050%20Ixelles&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <a href="https://www.embedgooglemap.net/blog/besst-wordpress-themes/"></a>
+                                </div>
+                            </div>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <p>&copy; 2018-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                </div>
+
     </div>
-<hr class="featurette-divider">
-   <!-- FOOTER -->
-   <footer class="container">
-    <p class="float-right"> <a href="#"></a> </p>
-  
-  <section id="footer">
-    <div class="container">
-      <div class="row text-center text-xs-center text-sm-left text-md-left">
-        <div class="col-xs-12 col-sm-3 col-md-3">
-          <h5>Quick links</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Products</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Contact</a></li>
-          </ul>
 
-          
-
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-3">
-          <h5>Contact</h5>
-          <ul class="list-unstyled quick-links">
-            <li><a href="javascript:void();"><i class="fa fa-phone "></i> 010-34-123-01</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-at"></i> anni032@hotmail.com</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-whatsapp"></i> 06-18440654</a></li>
-           
-          </ul>
-          
-          <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook fa-lg"></i></a></li>
-          <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter fa-lg"></i></a></li>
-          <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram fa-lg" ></i></a></li>
-        </div>
-        
-        <div class="col-xs-10 col-sm-3 col-md-3">
-
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="514" height="295" id="gmap_canvas" src="https://maps.google.com/maps?q=Brussel&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/best-wordpress-themes/"></a></div><style>.mapouter{position:relative;text-align:right;height:295px;width:514px;}.gmap_canvas {overflow:hidden;background:none!important;height:295px;width:514px;}</style></div>
-           
-            </ul>
-          </div>
-      </div>
+    </hr>
     </div>
-
-  </div>
-     
-        </hr>
-      </div>	
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-        </div>
-        </hr>
-      </div>	
+    <div class="row">
     </div>
-  </section>
-  <p>&copy; 2018-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-</footer> 
+    </hr>
 
+    </div>
+    </div>
+    </section>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-   <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-  </html>
+</body>
+
+</html>
