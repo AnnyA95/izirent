@@ -3,6 +3,15 @@
 /* Padding below the footer and lighter body text */
 
 
+body {
+
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+ 
+  
+}
+
+
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -11,6 +20,7 @@
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
+  zoom: 1;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -47,6 +57,18 @@
   margin-right: .75rem;
   margin-left: .75rem;
 }
+
+.marketing .col-lg-3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-3 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.row:before, .row:after {display: none !important;}
 
 
 /* Featurettes
@@ -85,10 +107,19 @@
     margin-top: 7rem;
   }
 
+  nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 0px;
+ 
+
+}
+
   #upButton {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 110px;
     right: 30px;
     z-index: 99;
     font-size: 18px;
@@ -105,6 +136,7 @@
     background-color: #007bff;
   }
 
+  
 
 
 .bloc_left_price {
@@ -155,10 +187,10 @@ hr#second {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #3498DB;
   color: white;
   padding: 16px;
   font-size: 16px;
+  height: 10px;
   border: none;
   cursor: pointer;
 }
@@ -200,36 +232,96 @@ hr#second {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
-  padding-bottom: 10px;
-  font-size: large;
-  font-style: italic;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:26px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
 }
 
-.navbar {
-  border-radius: 0px;
-}
-
+.my-float{
+	margin-top:16px;
 }
 
 
 /*Logo width mobile */
 img.logo {
   width: 85px;
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
+
+  #upButton {
+    display: none;
+    position: fixed;
+    bottom: 110px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+
+
+
 
 @media screen and (max-width: 600px) {
   img.logo {
     width: 90px;
   }
+  #upButton {
+    display: none;
+    position: fixed;
+    bottom: 110px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+
 }
 
-img.logo {
-  width: 85px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+li.nav-item {
+  margin-right: 20px;
 }
+
+div.photo_leftPanel {
+   position: relative;
+}
+
+div.photo_leftPanel > img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+
+
 
 

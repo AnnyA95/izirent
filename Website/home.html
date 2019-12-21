@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=5, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=yes">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel='shortcut icon' type='image/x-icon' href='./img/image3.png' />
@@ -16,13 +18,7 @@
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!--Fontawesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!--Fontawesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,33 +34,35 @@
 
    <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a href="home.html">  <img class="logo" onclick="goToHome()" src="./img/1200px-Free_logo.svg.png" alt="home"></a>
-                
+      
+                 
+                 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" >
-        
-          <span class="navbar-toggler-icon">
-
-         
-          
-          </span>
-          
+          <span class="navbar-toggler-icon"></span>
         </button>
-               
-  
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
+                <a class="nav-link" href="home.html"></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="go()" id="carsButton">Book </a>
+                </li>
             <li class="nav-item">
-            <a class="nav-link" href="#" onclick="go()" id="carsButton">Book </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">About us </a>
-          </li>
-          <li class="nav-item">
+              <a  class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="contact.html">About us </a>
+                </li>
+              <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact </a>
               </li>
+          </ul>
+          
+          <div id="photo_leftPanel">
+            <a href="home.html">  <img class="logo" onclick="goToHome()" src="./img/1200px-Free_logo.svg.png" alt="home"></a>
          </div>
         
-    
+           
+        
         </div>
         <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
           <i  id="test"></i>
@@ -82,7 +80,7 @@
       </nav>
       
     </header>
-  
+
   <main role="main">
   
       <div class="container">
@@ -150,15 +148,15 @@
           <img class="rounded-circle" src="./img/image1.png" alt="Generic placeholder image" width="200" height="200">
           </a>
           <h2>Vans</h2>
-          <p><a class="btn btn-secondary" href="./products.html" role="button">Boek nu &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="./products.html" role="button">Boek nu </a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <a href="products.html">
             <img class="rounded-circle"  src="./img/image3.png" alt="Generic placeholder image" width="200" height="200">
            </a>
           <h2>Cars</h2>
-          <p><a class="btn btn-secondary" href="./products.html" role="button">Boek nu &raquo;</a></p>
-
+          <p><a class="btn btn-secondary" href="./products.html" role="button">Boek nu </a></p>
+        
 
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
@@ -166,7 +164,8 @@
           <img class="rounded-circle" src="./img/image2.png" alt="Generic placeholder image" width="200" height="200">
           </a>
           <h2>Buses</h2>
-          <p><a class="btn btn-secondary" href="./products.html" role="button">Boek nu &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="./products.html" role="button">Boek nu</a></p>
+        
         </div><!-- /.col-lg-4 -->
         <div id="gohere">
 
@@ -257,14 +256,14 @@
                         position: relative;
                         text-align: right;
                         height: 295px;
-                        min-width: 514px;
+                        width: 514px;
                       }
 
                       .gmap_canvas {
                         overflow: hidden;
                         background: none !important;
                         height: 295px;
-                        min-width: 514px;
+                        width: 514px;
                       }
                     </style>
                   </div>
