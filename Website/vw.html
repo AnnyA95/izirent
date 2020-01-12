@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='shortcut icon' type='image/x-icon' href='./img/image3.png' />
+
+    <title>RentIT</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/translate.js"></script>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/cars.css" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand"></a>
+                    <a href="home.html">  <img class="logo" onclick="goToHome()" src="./img/1200px-Free_logo.svg.png" alt="home"></a>
+                 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+                <a class="nav-link" href="home.html"></a>
+            <li class="nav-item">
+              <a  class="nav-link" href="products.html">Véhicules</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact </a>
+              </li>
+          </ul>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse"></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+           
+            <button  onclick="getLanguage()" id="dropbtn" class="btn btn-secondary"> <i class="fa far fa-bars fa-lg"></i>
+              
+              <div id="myDropdown"  class="dropdown-content">
+                <a  class="translate" id="en" class="btn btn-info" role="button">English</a>
+                <a  class="translate" id="fr" class="btn btn-info" role="button">Frans</a>
+          
+             
+            </div>
+          </button>
+        </div>
+      </nav>
+      
+    </header>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">CARS WE OFFER</h1>
+        <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis feugiat sem, et suscipit ipsum. Cras turpis nisi, egestas sed dolor vitae, egestas tincidunt tellus. Maecenas viverra elit in dolor fringilla sodales. Fusce rhoncus euismod tincidunt. Sed pulvinar elit et nulla hendrerit, sit amet lacinia nisi.....</p>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+          
+          
+          <h1>test</h1>
+          
+      
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+        
+        </div>
+        
+        <div class="col-sm-8">formulier
+          
+            <hr>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Example select</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2">Example multiple select</label>
+                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                
+                <h2>Extra's</h2>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="attributes resource-block">
+                            <span class="attribute-icon" style="float:left"><img class="img-way" src="https://www.izihuren.nl/wp-content/uploads/2018/10/BC_roadside@2x-1.png" alt=""></span>
+
+    <label class="custom-block">
+            <input type="checkbox" name="extras[]" value="ANWB Pechhulp door heel Europa|0|per_day|0" data-name="ANWB Pechhulp door heel Europa" data-value-in="0" data-applicable="per_day" data-value="0" data-hourly-rate="0" data-currency-before="$" data-currency-after="" class="carrental_extras">
+ANWB Pechhulp door heel Europa
+                <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span><span> - Per Dag</span></span>
+<span class="pull-right show_if_time" style="display: none;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span> - Per Hour</span>
+        </label>
+</div>
+                    </div>
+                    
+                  </div>
+                  <div class="panel panel-default">
+                      <div class="panel-body">A Basic Panel</div>
+                    </div>
+              </form>
+        </div>
+      </div>
+
+       
+
+  </body>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </html>
+
+
+
+
+  

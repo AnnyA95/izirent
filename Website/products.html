@@ -29,45 +29,36 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand">
-
-                <a href="home.html"> <img class="logo" onclick="goToHome()" src="./img/1200px-Free_logo.svg.png" alt="home"></a>
-
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
+            <img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt="">
+       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="go()" id="carsButton">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us </a>
+              </li>
+              
+          </ul></div>
+          <div class="collapse navbar-collapse" id="navbarCollapse"></div>
+       
+    
+            
+            
+            <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
+               <i id="test" class="flag-icon flag-icon-gb"></i>
+    
+              <div id="myDropdown" class="dropdown-content">
+                <a class="translate" id="fr" role="button">Français</a>
+                <a class="translate" id="nl" role="button">Nederlands</a>
+                
+              </div>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <a class="nav-link" href="home.html"></a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">About us </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact </a>
-                    </li>
-                </ul>
-
-                <div id="photo_leftPanel">
-
-                </div>
-
-                <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
-                    <i id="test"></i>
-
-                    <div id="myDropdown" class="dropdown-content">
-                        <a class="translate" id="fr" class="btn btn-info" role="button">Français</a>
-                        <a class="translate" id="nl" class="btn btn-info" role="button">Nederlands</a>
-                        <a class="translate" id="eng" class="btn btn-info" role="button">English</a>
-
-                    </div>
-                </button>
-            </div>
         </nav>
 
     </header>
@@ -109,9 +100,9 @@
                                 <div class="listing-header">
                                     <h4>Het beste tarief, vanaf:</h4>
                                     <div class="listing-details-2-price-block">
-                                        <span class="price-per-day">€ <span class="price">75</span>, per dag</span>
+                                        <span class="price-per-day">€ <span class="price">55</span>, per dag</span>
                                         <br>
-                                        <span>Totaal <span class="price">75.00</span> € </span>
+                                        <span>Totaal <span class="price">55.00</span> € </span>
                                     </div>
                                 </div>
 
@@ -154,9 +145,9 @@
                                 <div class="listing-header">
                                     <h4>Het beste tarief, vanaf:</h4>
                                     <div class="listing-details-2-price-block">
-                                        <span class="price-per-day">€ <span class="price">75</span>, per dag</span>
+                                        <span class="price-per-day">€ <span class="price">55</span>, per dag</span>
                                         <br>
-                                        <span>Totaal <span class="price">75.00</span> € </span>
+                                        <span>Totaal <span class="price">55.00</span> € </span>
                                     </div>
                                 </div>
 
@@ -201,7 +192,7 @@
                             <ul class="list-unstyled quick-links">
                                 <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
                                 <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Products</a></li>
+                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Véhicules </a></li>
                                 <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Contact</a></li>
                             </ul>
 
@@ -227,7 +218,9 @@
 
                             <div class="mapouter">
                                 <div class="gmap_canvas">
-                                    <iframe width="514" height="295" id="gmap_canvas" src="https://maps.google.com/maps?q=Rue%20de%20la%20cuve%2027%2C%201050%20Ixelles&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <iframe width="514" height="295" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=Avenue%20Louise%20222&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                                     <a href="https://www.embedgooglemap.net/blog/besst-wordpress-themes/"></a>
                                 </div>
                             </div>

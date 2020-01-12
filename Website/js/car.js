@@ -15,7 +15,6 @@ $(document).ready(function() {
       $('#datetimepicker7').datetimepicker({
         useCurrent: true,
         format: 'LL',
-        locale: 'nl-be',
         widgetPositioning: {
           horizontal: 'left',
           vertical: 'bottom'
@@ -36,7 +35,6 @@ $(document).ready(function() {
       $('#datetimepicker8').datetimepicker({
         useCurrent: true,
         format: 'LL',
-        locale: 'nl-be',
         widgetPositioning: {
           horizontal: 'left',
           vertical: 'bottom'
@@ -91,9 +89,9 @@ $(document).ready(function() {
   
   
    var carKm_prices = new Array();
-   carKm_prices["0km"]=0;
-   carKm_prices["300km"]=105;
-   carKm_prices["135km"]=135;
+   carKm_prices["125km"]=55;
+   carKm_prices["300km"]=75;
+   carKm_prices["Onbeperkt"]=85;
   
    
   
@@ -131,16 +129,113 @@ $(document).ready(function() {
   }
   */
   
-  function ExtraPrice()
+
+
+
+ function ExtraAnwb()
+ {
+ 
+   debugger
+     var extraPricein0=0;
+     var theForm = document.forms["carform"];
+     var includeExtra = theForm.elements["includeExtra"];
+
+     if(includeExtra.checked==true){
+       extraPricein0=0;
+       localStorage.setItem('anwb', includeExtra.value);
+     }else{
+      localStorage.removeItem('anwb', includeExtra.value);
+     }
+    
+     return extraPricein0;
+ }
+
+
+  function ExtraPriceInsurance1()
   {
   
-      var extraPrice=0;
+    debugger
+      var extraPricein1=0;
       var theForm = document.forms["carform"];
-      var includeExtra = theForm.elements["includeExtra"];
+      var includeExtra = theForm.elements["includeExtraInsurance1"];
+
       if(includeExtra.checked==true){
-        extraPrice=20;
+        extraPricein1=7.50;
+        localStorage.setItem('insure1', includeExtra.value);
+      }else{
+        extraPricein1 = 1
+        localStorage.removeItem('insure1', includeExtra.value);
       }
-      return extraPrice;
+     
+      return extraPricein1;
+  }
+
+
+  function ExtraPriceInsurance2()
+  {
+  
+      var extraPricein2=0;
+      var theForm = document.forms["carform"];
+      var includeExtra = theForm.elements["includeExtraInsurance2"];
+      if(includeExtra.checked==true){
+        extraPricein2=17;
+        localStorage.setItem('insure2', includeExtra.value);
+      }else {
+        extraPricein2 = 1
+        localStorage.removeItem('insure2', includeExtra.value);
+      }
+      return extraPricein2;
+  }
+
+  function ExtraPriceDriver()
+  {
+  
+      var extraPriceD=0;
+      var theForm = document.forms["carform"];
+      var includeExtra = theForm.elements["includeExtraDriver"];
+      if(includeExtra.checked==true){
+        extraPriceD= 3.50;
+        localStorage.setItem('driver', includeExtra.value);
+      }else{
+        extraPriceD = 1
+        localStorage.removeItem('driver', includeExtra.value);
+      }
+      return extraPriceD;
+  }
+
+    function ExtraPriceWheels()
+  {
+  
+      var extraPriceW=0;
+      var theForm = document.forms["carform"];
+      var includeExtra = theForm.elements["includeExtraWheels"];
+      if(includeExtra.checked==true){
+        extraPriceW=5.50;
+        localStorage.setItem('wheels', includeExtra.value);
+      }else{
+        extraPriceW=1
+        localStorage.removeItem('wheels', includeExtra.value);
+      }
+      return extraPriceW;
+  }
+
+  function ExtraNav()
+  {
+
+      var extraPricein=0;
+      var theForm = document.forms["carform"];
+      var includeExtra = theForm.elements["includeExtraNavi"];
+    
+      if(includeExtra.checked==true){
+        extraPricein0=0;
+        localStorage.setItem('nav', includeExtra.value);
+      }else{
+       
+       localStorage.removeItem('nav', includeExtra.value);
+       
+      }
+     
+      return extraPricein;
   }
           
   function calculateTotal()
@@ -163,25 +258,78 @@ $(document).ready(function() {
       var Difference_In_Time = date2.getTime() - date1.getTime(); 
         
       var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
-           
+      debugger     
       var KM = getCarKMPrice()
-      if(KM == 105 ) {
-         carPrice = 105
-      }else if( KM == 135){
-          carPrice = 135
-        }
+
+      switch (KM) {
+        case 55:
+          carPrice = 55
+          break;
+        case 75:
+          carPrice = 75
+          break;
+        case 85:
+          carPrice = 85
+          break;
+        default:
+          break;
+      }
+    
          
       var totalDaysStartEnd =  carPrice * Difference_In_Days
-  
-       var extra = ExtraPrice()
-       var special =  extra * Difference_In_Days 
-    
-    
-      var carPrice = totalDaysStartEnd  + special
       
+      var special  = ''
+       debugger
+       var extraanv =  ExtraAnwb()
+       var extra = ExtraPriceInsurance1() 
+       var extrain = ExtraPriceInsurance2()
+       var etrad = ExtraPriceDriver()
+       var etrawheel  = ExtraPriceWheels()
+       var extranav  = ExtraNav()
+
+
+        
+        if(extra !=1 ){
+        var a  =  Difference_In_Days  * extra
+        } else{
+          a = 0
+        }
+        if(extrain != 1){
+         var b = Difference_In_Days *  extrain 
+         
+        }
+        else{
+          b = 0
+        }if(etrad != 1) {
+        var c = Difference_In_Days * etrad 
+        }
+        else{
+          c = 0
+        } if (etrawheel != 1){
+          var d = Difference_In_Days * etrawheel
+        }
+        else{
+          d = 0
+        }
+       
+        special = a + b + c + d + extraanv + extranav
+     
+
+      if(special == Difference_In_Days){
+        debugger
+        var eraf =  special + Difference_In_Days
+        var carPrice = totalDaysStartEnd  + special - eraf 
+      }else{
+        var carPrice = totalDaysStartEnd  + special 
+      }
+  
+
+      debugger
       var divobj = document.getElementById('totalPrice');
       divobj.style.display='block';
       divobj.innerHTML = "€ " + carPrice;
+      localStorage.setItem('price', carPrice);
+      localStorage.setItem('totaldays', Difference_In_Days);
   
   }
   
@@ -198,3 +346,4 @@ $(document).ready(function() {
   });
   
   
+ 

@@ -104,7 +104,6 @@
 }
 
 span.amount {
-  position: absolute;
   right: 3rem;
 }
 
@@ -1072,4 +1071,11 @@ body {
 }
 .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two:hover {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+
+.resource-block .custom-block {
+  margin: 23px 0 0 0;
+  margin-bottom: 0 !important;
+  
 }

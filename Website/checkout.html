@@ -21,6 +21,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
     <!-- Custom styles for this template -->
@@ -30,7 +31,7 @@
       <title>RentIT</title>
       <script type="text/javascript" src="./js/car.js" ></script>
       <script type="text/javascript" src="./js/translate.js"></script>
-      
+ 
 
       <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -42,6 +43,8 @@
     <!-- Custom styles for this template -->
     <link href="css/index.css" rel="stylesheet">
     <link href="css/cars.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
+    
   </head>
   <body>
       <header>
@@ -56,10 +59,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#" onclick="go()" id="carsButton">Book</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">About us </a>
+                  <a class="lang nav-link" key="home" href="#" onclick="go()" id="carsButton"></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact us </a>
@@ -77,7 +77,6 @@
                 <div id="myDropdown" class="dropdown-content">
                   <a class="translate" id="fr" class="btn btn-info" role="button">Français</a>
                   <a class="translate" id="nl" class="btn btn-info" role="button">Nederlands</a>
-                  <a class="translate" id="eng" class="btn btn-info" role="button">English</a>
                   
                 </div>
               </button>
@@ -89,57 +88,118 @@
               
 
 
+    <h2 class="rq-title">Mercedes Vito 9 persoons</h2>
 
 
-
-    </header>
+<!-- <h2 class="pull-left">News</h2> -->
+<ol class="breadcrumb rq-subtitle secondary">
+  <li id="crumbs"><span typeof="v:Breadcrumb">
+    <a rel="v:url" property="title" href="http://83.96.162.239/home.html">Home</a></span>&nbsp; → &nbsp;<span typeof="Breadcrumb"><a rel="url" property="v:title" href="http://83.96.162.239/products.html">Cars</a></span>&nbsp; → &nbsp;
+    <a rel="v:url" property="title" href="">Checkout</a></span>&nbsp; → &nbsp;<span typeof="Breadcrumb"></span>
+    <span class="current">Mercedes Vito 9 persoons</span></li></ol>  </div>
+      </div>
 
       
  
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-   
-             <br/>
-              <img class="card-img-top" src="./img/mercedes_vito2.png" alt="Card image cap">
+                 <h5>Artikel</h5>
             
-              <h2>Mercedes Vito </h2> 
+                     
+             
+                 
               
-              <hr>
-              <br/>
-              <div class="info">
-                  <div class="row">
-                          <div class=" col-xs-6 col-sm-4">
-                              <li class="list">
-                                  <i ><img  src="./img/ico_personen.png"></i> 
-                                  <span>Zitplaatsen 9</span></li>
-                          </div>
-                          <div class="col-xs-6 col-sm-4">
-                                  <li class="list">
-                                          <i ><img  src="./img/ico_brandstof.png"></i> 
-                                          <span>Diesel</span></li>
-                          </div>
-                          <!-- Optional: clear the XS cols if their content doesn't match in height -->
-                          <div class="clearfix visible-xs-block"></div>
-                          <div class="col-xs-6 col-sm-4"> <li class="list">
-                                  <i ><img  src="./img/ico_schakel.png"></i> 
-                                  <span>Automaat</span></li></div>
-                        </div>
-                        <br/>
-                        <div class="row">
-                              <div class="col-xs-6 col-sm-4"> <li class="list">
-                                      <i ><img  src="./img/ico_airco.png"></i> 
-                                      <span>Met airco</span></li></div>
-                                      <div class="col-xs-6 col-sm-4"> <li class="list">
-                                              <i ><img  src="./img/ico_koffer.png"></i> 
-                                              <span>Koffers</span></li></div>
-                              <!-- Optional: clear the XS cols if their content doesn't match in height -->
-                              <div class="clearfix visible-xs-block"></div>
-                              <div class="col-xs-6 col-sm-4"> <li class="list">
-                                      <i ><img  src="./img/ico_deur.png"></i> 
-                                      <span>Deuren 4</span></li></div>
-                            </div>
-            </div>
+             <div class="card" >
+                   <div class="card-header">
+    Artikel is 
+  </div>
+  <br/>
+  <img class="card-img-top" src="./img/mercedes_vito2.png" alt="Card image cap">
+            
+  <div class="card-body">
+
+  <div class="col-md-6 mobile-order-2">
+                                    <div class="panel-subtitle">
+                                      <h5 >Uw bestelling:</h5>
+
+                                    </div>
+
+                                    
+                                    <div id="order_review" class="woocommerce-checkout-review-order">
+                                        <table class="shop_table woocommerce-checkout-review-order-table">
+	<thead>
+		<tr>
+		</tr>
+	</thead>
+	<tbody>
+						<tr class="cart_item">
+					<td class="product-name">
+
+		<tr class="variation-Resources"><p class="lang" key="pech" id="1"><span class="woocommerce-Price-amount amount">
+      <tr class="variation-Resources"><p class="lang" key="insure1" id="2"><span class="woocommerce-Price-amount amount">
+        <tr class="variation-Resources"><p  class="lang" key="insure2" id="3"><span class="woocommerce-Price-amount amount">
+          <tr class="variation-Resources"><p  class="lang" key="driver" id="4"><span class="woocommerce-Price-amount amount">
+            <tr class="variation-Resources"><p class="lang" key="wheels" id="5"><span class="woocommerce-Price-amount amount">
+              <tr class="variation-Resources"><p class="lang" key="navi" id="6"><span class="woocommerce-Price-amount amount">
+</dd>
+			<dt class="variation-Ophaaldatumentijd">Ophaal datum en tijd:</dt>
+    <dd class="variation-Ophaaldatumentijd">      <p> <span id="begind"></span> om </p> <span id="begint"></span></p>
+
+   
+</dd>
+			<dt class="variation-InleverdatumenTijd">Inleverdatum en Tijd:</dt>
+      <dd class="variation-Ophaaldatumentijd">      <p> <span id="eindd"></span> om </p> <span id="eindt"></span></p>
+
+ 
+</dd>
+			<dt class="variation-TotalDays">Total Days:</dt>
+		<dd class="variation-TotalDays"><p id="totaldays"></p>
+</dd>
+			<dt class="variation-Totalkm">Total km:</dt>
+		<dd class="variation-Totalkm"><p id="km"></p>
+</dd>
+	</dl>
+					</td>
+				</tr>
+					</tbody>
+	<tfoot>
+
+		<tr class="cart-subtotal">
+      <th>Subtotaal</th>
+    
+      <td><strong><span class="woocommerce-Price-amount amount"></span><span class="woocommerce-Price-currencySymbol"> € <span id="sub"></span> </strong> </td>
+		</tr>
+
+		
+		
+		
+		
+		
+		<tr class="order-total">
+      <th>Totaal</th> 
+      <td><strong><span class="woocommerce-Price-amount amount"></span><span class="woocommerce-Price-currencySymbol"> € <span id="price"></span> </strong> </td>
+      
+		</tr>
+
+		
+	</tfoot>
+</table>
+
+                                    </div>
+
+                                    
+                                </div>
+
+  </div>
+ <div class="card-footer">
+</div>
+
+ 
+</div>
+
+
+
         
         </div>
         
@@ -150,178 +210,82 @@
             
             <form class="needs-validation" action="" id="carform"  novalidate>
             
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">OPHAAL LOCATIE</label>
-                  <select class="form-control" id="exampleFormControlSelect1"  required>
-                    <option value="">Kies een locatie</option>
-                    <option  value="BX">Brussel</option>
-                    <option value="RDT">Rotterdam</option>
-                    
-                    
-                  </select>
-                  
-               
-                  
+         
 
-                  <div class="container"></div>
-                      <div class="row justify-content-start">
-                        <div class="col-7">
-                            <div class="container"></div>
-                            <div class="row justify-content-start">
-                              <div class="col-12">
-                                <div>
-                                  <h5>Datum</h5>
-                                        <span class="pick-up-date-picker">
-                                            <div class="input-group date" id="datetimepicker7">
-                                                <input type="text"  id="validationCustom01"  placeholder="Kies een datum"  class="form-control" required />
-                                                <span class="input-group-addon">
-                                                  <span class="glyphicon glyphicon-calendar"></span> 
-                                                </span>
-                                              </div>
-                                          
-                                        </span>
-                                   
-                                </div>
-                              </div>
-                            
-                              </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="container"></div>
-                            <div class="row justify-content-start">
-                              <div class="col-14">
-                                <div>
-                                    <h5>Tijd</h5>
-                                        <span class="pick-up-date-picker">
-                                            <div class="input-group date" id="datetimepicker6">
-                                                <input type="text" value=""  class="form-control" required />
-                                                <span class="input-group-addon">
-                                                  <span class="glyphicon glyphicon-time"></span> 
-                                                </span>
-                                              </div>
-                                          
-                                        </span>
-                                   
-                                </div>
-                              </div>
-                            
-                              </div>
-                        </div>
-                     
-
-  </div>
-
-  <div class="container"></div>
-  <div class="row justify-content-start">
-    <div class="col-7">
-        <div class="container"></div>
-        <div class="row justify-content-start">
-          <div class="col-12">
-            <div>
-              <h5>Datum</h5>
-                    <span class="pick-up-date-picker">
-                        <div class="input-group date" id="datetimepicker8">
-                            <input type="text" placeholder="Kies een datum"  id="validationCustom02"  class="form-control" required />
-                            <span class="input-group-addon">
-                              <span class="glyphicon glyphicon-calendar"></span> 
-                            </span>
-                          </div>
-                      
-                    </span>
-               
-            </div>
-          </div>
-        
-          </div>
+                   <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="input4">Voornaam</label>
+      <input type="text" class="form-control" id="" required>
     </div>
-    <div class="col-4">
-        <div class="container"></div>
-        <div class="row justify-content-start">
-          <div class="col-14">
-            <div>
-                <h5>Tijd</h5>
-                    <span class="pick-up-date-picker">
-                        <div class="input-group date" id="datetimepicker9">
-                            <input type="text" value="" class="form-control" required />
-                            <span class="input-group-addon">
-                              <span class="glyphicon glyphicon-time"></span> 
-                            </span>
-                          </div>
-                      
-                    </span>
-               
-            </div>
-          </div>
-        
-          </div>
-    </div>
- 
-
-</div>
-
-
-</div>
- 
-      <br/>
-              
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">KM KEUZE</label>
-                  <div class="radio">
-                      <label><input type="radio"  checked="checked" class="radio" onclick="calculateTotal()"  name="selectedKM" value="0km">125 km vrij per dag = € 75, p/d</label>
-                    </div>
-                    <div class="radio">
-                      <label><input type="radio" class="radio"  onclick="calculateTotal()"  name="selectedKM" value="300km">300 km vrij per dag = € 105, p/d</label>
-                    </div>
-                    <div class="radio">
-                      <label>
-                        <input type="radio" class="radio"    onclick="calculateTotal()"  name="selectedKM"  value="135km" /> Onbeperkt km per dag = € 135, p/d
-                      </label>
-                    </div>
-                </div>
-
-             
-              
-              
-                <h2>Extra's</h2>
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                      
-                        <label class="custom-block">
-                            <input type="checkbox" id="includeExtra"  name="includeExtra" onclick="calculateTotal()"  >
-                ANWB Pechhulp door heel Europa
-                                <span class="amount"> € 20.00 - Per Dag</span>
-                <span class="pull-right show_if_time" style="display: none;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span> - Per Hour</span>
-                        </label>
-                      
-                        
-                      
-                      
-                      </div>
-                 
-
-
-                 
-                    </div>
-
-                    <div class="booking-pricing-info" style="">
-                      <h3 class="booking_cost">Totale kosten <span style="float: right; margin-right: 10px">
-                        <div id="totalPrice"></div>
-                      </span>
-                      </h3>
+    <div class="form-group col-md-6">
+      <label for="input4">Achternaam</label>
+      <input type="text" class="form-control" id="" required >
     
-      </div>
+    </div>
+
+
+
+    <div class="form-group col-md-12">
+      <label for="">Land</label>
+      <input type="text" class="form-control" id="" placeholder="" required>
       
-<button type="submit" id="disable" class="btn btn-info" >BOOK NU</button>
+    </div>
+                
+       <div class="form-group col-md-12">
+                <label for="">Woonplaats</label>
+                <input type="text" class="form-control" id="" placeholder="" required>
+                
+              </div>
+
+   <div class="form-group col-md-12">
+                <label for="">Straat/nummer</label>
+                <input type="text" class="form-control" id="" placeholder="" required>
+                
+              </div>
+
+            
+
+
+               <div class="form-group col-md-12">
+                <label for="">Postcode</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                
+              </div>
+            
+                 <div class="form-group col-md-12">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+    </div>
+
+              <div class="form-group col-md-12">
+      <label for="input">Telefoonnumer</label>
+      <input type="" class="form-control" id="inputEmail4" placeholder="Nummer" required>
+    </div>
+
+             <div class="form-group col-md-12">
+      <label for="input">Extra info</label>
+   <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
+    </div>
+
+               
+                    </div>
+
+      
+      
+<button  id="disable"  onclick="sendMail()" class="btn btn-info" >Verzend</button>
               </form>
         </div>
       </div>
 
     </div>
 </div>
+
+
   </body>
 
 
+
+  
 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -336,7 +300,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
-
+<script type="text/javascript" src="./js/checkout.js"></script>
 
   </html>
 

@@ -426,3 +426,14 @@ and (max-device-width : 1024px)  {
 
 }
 }
+
+
+.container {
+  max-width: 1390px;
+  
+}
+
+h2.productheader {
+  color: gray;
+}
+

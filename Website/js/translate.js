@@ -41,23 +41,20 @@ $('.translate').click(function(){
 
 
  
- chanegicon(lang)
+
  changeLanguage(lang);
 });
 
 function changeLanguage(lang){
 $('.lang').each(function(){
      $(this).text(arrLang[lang][$(this).attr('key')]);
-    
+     console.log(arrLang)
 
  }); 
 }
 })
 
-function chanegicon(lang){
- 
 
-}
 
 
 
@@ -70,22 +67,28 @@ function getLanguage() {
 /* Translatio of items use key en lang as classname  */
 let arrLang = {
     eng: {
-        'home' : 'Home',
-        'about' : 'About Us',
-        'contact' : 'Contact US',
-        'com' : 'Comming soon',
+     
     },
 
     fr: {
-        'home' : 'Massion',
-        'about' : 'need text',
+        'home' : 'Réservez maintenant',
         'contact' : 'need text',
-        'com' : 'need text',
+        'pech' :  'Assistance routière en Belgique et en Europe (€0.00 - Par jour)',
+        'insure1' : 'Protection vol et collision - Réduction de franchise 1900€ à 550€ (€7.50 - Par jour)',
+        'insure2' : 'Protection vol et collision - Réduction de franchise 1900€ à 1200 (€17.00 - Par jour)',
+        'driver' : 'Conducteur supplémentaire (€3.50 - Par jour)',
+        'wheels' : 'Protection pneus et vitres (€5.50 - Par jour)',
+        'navi' : 'Navigation (€0.00 - Par jour) '
     },
     nl: {
-      'home' : 'Thuis',
-      'about' : 'Over ons',
+      'home' : 'Reserveer nu',
       'contact' : 'Contact',
       'com' : 'Binnen kort beschikbaar',
+      'pech' : 'ANWB Pechhulp door heel Europa (€0.00 - Per Dag)',
+      'insure1': 'Verlagen eigen risico van €1900,- naar €550 (€7.50 - Per Dag)' ,
+      'insure2': 'Verlagen eigen risico van €1900,- naar 1200 (€17.0 - Per Dag) ',
+      'driver' : 'Extra bestuurder (€3.50 - Per Dag)',
+      'wheels' : 'Ruiten en banden (€5.50 - Per Dag)',
+      'navi' : 'Navigatie (€0.00 - Per Dag)'
   }
 }

@@ -1,0 +1,23 @@
+
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 15 1 auto;
+    padding: 0.25rem;
+    margin-left: 50px;
+    width: 346px;
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 15 1 auto;
+        padding: 0.25rem;
+        margin-left: 50px;
+        width: 252px;
+    }
+}
