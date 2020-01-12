@@ -21,3 +21,15 @@ and (-webkit-device-pixel-ratio : 3) {
         width: 252px;
     }
 }
+
+.form-check-label {
+    margin-bottom: 0px;
+    margin-left: 17px;
+    font-weight: 400;
+}
+
+.form-check {
+    position: relative;
+    display: block;
+     padding-left: 0.25rem; 
+}
