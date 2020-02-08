@@ -1,3 +1,14 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel='shortcut icon' type='image/x-icon' href='./img/image3.png' />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="./js/index.js"></script>
 
@@ -10,26 +21,59 @@
 
 <!-- Custom styles for this template -->
 <link href="css/contact.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script type="text/javascript" src="./js/translate.js"></script>
+<link href="./flag-icon-css-master/css/flag-icon.css" rel="stylesheet">
+<script type="text/javascript" src="./js/translate.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-          <a class="nav-link" href="home.html">Home</a>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a href="./index.html"><img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-link" href="./index.html"></a>
+            <li class="nav-item">
+              <a class="lang nav-link home" key="home" href="#" onclick="go()" id="carsButton"></a>
+            </li>
         <li class="nav-item">
-          <a class="nav-link" href="products.html">Products</a>
+          <a  class="lang nav-link" key="products" href="./products.html"></a>
         </li>
-       
-      </ul>
-    </div>
-  </nav>
+          <li class="nav-item">
+              <a class="nav-link" href="././contact.html">Contact </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse"></div>
+     
+  
+          
+          
+      <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
+         <i id="test" class="flag-icon flag-icon-fr"></i>
+
+        <div id="myDropdown" class="dropdown-content">
+          <a class="translate" id="fr" role="button">Français</a>
+          <a class="translate" id="nl" role="button">Nederlands</a>
+          
+        </div>
+      </button>
+     </button>
+    </nav>
+    
+  </header>
+  <body>
+
+
 <section class="jumbotron text-center">
     <div class="container">
-        <h1 class="jumbotron-heading">CONTACT US</h1>
-        <p class="lead text-muted mb-0">please contact use by filling in this form</p>
+        <br/>
+        <h1 key="ctext" class="lang jumbotron-heading"></h1>
+        <p  key="ctextbody" class="lang leads text-muted mb-0"></p>
     </div>
 </section>
 
@@ -37,24 +81,24 @@
     <div class="row">
         <div class="col">
             <div class="card">
-                <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Contact us.
+                <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i>
                 </div>
                 <div class="card-body">
                     <form>
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name" required>
+                            <label class="lang" key='firstname' for="name"></label>
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <label class="lang" key='mail' for="email"></label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label class="lang" key="extrainfo" for="message"></label>
                             <textarea class="form-control" id="message" rows="6" required></textarea>
                         </div>
                         <div class="mx-auto">
-                        <button type="submit" class="btn btn-primary text-right">Submit</button></div>
+                        <button type="submit"  class=" lang btn btn-primary text-right" key="send" ></button></div>
                     </form>
                    <hr>
                 </div>
@@ -67,8 +111,8 @@
                 <div class="card-body">
                     <p>Avenue Louise 222 </p>
                     <p>1050 Ixelles</p>
-                    <p>België</p>
-                    <p>Email : Izirent@gmail.be</p>
+                    <p class="lang" key="be"></p>
+                    <p>Email : izirentr@gmail.com</p>
                     <p>Tel. +32 488.27.71.08
                             +32 486.15.56.75
                    
@@ -101,12 +145,12 @@
 
 
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
-                <h5>Informations</h5>
+                <h5>Information</h5>
                 <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
                 <ul class="list-unstyled">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Cars</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./products.html">Vehicles</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -129,3 +173,16 @@
     </div>
     
 </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

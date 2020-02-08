@@ -13,7 +13,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
 
-
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -22,6 +24,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
   <!-- Custom styles for this template -->
+
+  <link href="css/cars.css" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <link href="./flag-icon-css-master/css/flag-icon.css" rel="stylesheet">
 
@@ -38,14 +42,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
   <!-- Custom styles for this template -->
-  <link href="css/index.css" rel="stylesheet">
-  <link href="css/cars.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
 
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
-            <img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt="">
+          <a href="./index.html"><img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt=""></a>
        
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -53,11 +56,10 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="go()" id="carsButton">Book</a>
+                <a class="nav-link active" href="./contact.html">Contact </a>
               </li>
             
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us </a>
               </li>
               
           </ul></div>
@@ -67,12 +69,11 @@
             
             
             <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
-               <i id="test" class="flag-icon flag-icon-gb"></i>
+               <i id="test" class="flag-icon flag-icon-fr"></i>
     
               <div id="myDropdown" class="dropdown-content">
                 <a class="translate" id="fr" role="button">Français</a>
                 <a class="translate" id="nl" role="button">Nederlands</a>
-                <a class="translate" id="eng" role="button">English</a>
                 
               </div>
             </button>
@@ -90,7 +91,7 @@
 <!-- <h2 class="pull-left">News</h2> -->
 <ol class="breadcrumb rq-subtitle secondary">
 <li id="crumbs"><span typeof="v:Breadcrumb">
-  <a rel="v:url" property="title" href="http://83.96.162.239/home.html">Home</a></span>&nbsp; → &nbsp;<span typeof="Breadcrumb"><a rel="url" property="v:title" href="http://83.96.162.239/products.html">Cars</a></span>&nbsp; → &nbsp;<span class="current">Mercedes Vito 9 persoons</span></li></ol>  </div>
+  <a rel="v:url" property="title" href="./index.html">Home</a></span>&nbsp; → &nbsp;<span typeof="Breadcrumb"><a rel="url" property="v:title" href="./products.html">Cars</a></span>&nbsp; → &nbsp;<span class="current">Mercedes Vito 9 persoons</span></li></ol>  </div>
     </div>
   
 
@@ -112,7 +113,7 @@
                         <div class=" col-xs-6 col-sm-4">
                             <li class="list">
                                 <i><img src="./img/ico_personen.png"></i> 
-                                <span>Zitplaatsen 9</span></li>
+                                <span class="lang " key="sit"></span>
                         </div>
                         <div class="col-xs-6 col-sm-4">
                                 <li class="list">
@@ -123,31 +124,36 @@
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-xs-6 col-sm-4"> <li class="list">
                                 <i><img src="./img/ico_schakel.png"></i> 
-                                <span>Automaat</span></li></div>
+                                <span class="lang " key="gear"></span></li>
+                              </div>
                       </div>
                       <br>
                       <div class="row">
                             <div class="col-xs-6 col-sm-4"> <li class="list">
                                     <i><img src="./img/ico_airco.png"></i> 
-                                    <span>Met airco</span></li></div>
+                                    <span class="lang " key="airco"></span></li>
+                                  </div>
                                     <div class="col-xs-6 col-sm-4"> <li class="list">
                                             <i><img src="./img/ico_koffer.png"></i> 
-                                            <span>Koffers</span></li></div>
-                            <!-- Optional: clear the XS cols if their content doesn't match in height -->
+                                            <span class="lang " key="bagage"></span></li>
+                                          </div>
                             <div class="clearfix visible-xs-block"></div>
                             <div class="col-xs-6 col-sm-4"> <li class="list">
                                     <i><img src="./img/ico_deur.png"></i> 
-                                    <span>Deuren 4</span></li></div>
+                                    <span class="lang " key="doors"></span></li>
+                                  </div>
                           </div>
           </div>
       
       </div>
       
+
+
+   
       
       <div class="col-sm-8">
-        <h2>Extra's Kiezen</h2>
-         <h4 class="pp" value="75" id="carPrice">€ 55.00, Per Dag</h4>
-      
+        <h2 class="lang" key="extras"></h2>
+         <h4 class="lang pp" key="priceday55" value="75" id="carPrice">€ 55.00, Per Dag</h4>
           <hr>
 
      
@@ -167,10 +173,10 @@
                           <div class="row justify-content-start">
                             <div class="col-12">
                               <div>
-                                <h5>Datum</h5>
+                                <h5 class="lang" key="dates"></h5>
                                       <span class="pick-up-date-picker">
                                           <div class="input-group date" id="datetimepicker7">
-                                              <input type="text"  name="begind" id="validationCustom01" placeholder="Kies een datum" class="form-control" required="">
+                                              <input type="text"  name="begind" id="validationCustom01" placeholder="" class="form-control" required="">
                                               <span class="input-group-addon">
                                                 <span class="glyphicon glyphicon-calendar"></span> 
                                               </span>
@@ -188,7 +194,7 @@
                           <div class="row justify-content-start">
                             <div class="col-14">
                               <div>
-                                  <h5>Tijd</h5>
+                                <h5 class="lang" key="times"></h5>
                                       <span class="pick-up-date-picker">
                                           <div class="input-group date" id="datetimepicker6">
                                               <input type="text" name="begint" value="12" class="form-control" required="">
@@ -215,10 +221,10 @@
       <div class="row justify-content-start">
         <div class="col-12">
           <div>
-            <h5>Datum</h5>
+            <h5 class="lang" key="dater"></h5>
                   <span class="pick-up-date-picker">
                       <div class="input-group date" id="datetimepicker8">
-                          <input type="text"   name="eind" placeholder="Kies een datum" id="validationCustom02" class="form-control" required="">
+                          <input type="text"   name="eind" placeholder="" id="validationCustom02" class="form-control" required="">
                           <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span> 
                           </span>
@@ -236,7 +242,7 @@
       <div class="row justify-content-start">
         <div class="col-14">
           <div>
-              <h5>Tijd</h5>
+            <h5 class="lang" key="timer"></h5>
                   <span class="pick-up-date-picker">
                       <div class="input-group date" id="datetimepicker9">
                           <input type="text"  name="eindt" value="12" class="form-control" required="">
@@ -262,17 +268,22 @@
     <br>
             
               <div class="form-group">
-                  <label for="exampleFormControlSelect1">KM KEUZE</label>
+                  <label class=lang key="km" for="exampleFormControlSelect1"></label> <span class="lang" key=extrakm></span>
                 <div class="radio">
-                    <label><input type="radio" checked="checked" class="radio" onclick="calculateTotal()" name="selectedKM" value="125km">125 km vrij per dag = € 55, p/d</label>
-                  </div>
-                  <div class="radio">
-                    <label><input type="radio" class="radio" onclick="calculateTotal()" name="selectedKM" value="300km">300 km vrij per dag = € 75, p/d</label>
+                    <label class="lang" >
+                      <input type="radio" checked="checked" class=" lang radio" onclick="calculateTotal()" name="selectedKM" value="125km"></label>
+                      <span class="lang " key='kmfirst'></span>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" class="radio" onclick="calculateTotal()" name="selectedKM" value="Onbeperkt"> Onbeperkt km per dag = € 85, p/d
+                      <input type="radio" class="radio" onclick="calculateTotal()" name="selectedKM" value="300km"></label>
+                    <span class="lang" key='kmsecond'></span>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" class="radio" onclick="calculateTotal()" name="selectedKM" value="Onbeperkt">
                     </label>
+                    <span class="lang " key='kmthird'></span>
                   </div>
               </div>
 
@@ -293,48 +304,45 @@
 
                                 <label class="custom-block">
                                         <input type="checkbox" checked=checked value="ANWB Pechhulp door heel Europa" id="includeExtra" name="includeExtra" onclick="calculateTotal()" data-value-in="0" data-applicable="per_day" data-value="0" data-hourly-rate="0" data-currency-before="$" data-currency-after="" class="carrental_extras">
-                                        Assistance routière en Belgique et en Europe 
-                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span><span> - Per Dag</span></span>
-                        <span class="pull-right show_if_time" style="display: none;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span> - Per Hour</span>
+                                        <span class="lang" key="pech2" ></span>
+                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span><span class="lang" key="daylist"> </span></span>
                                     </label>
-            </div>
-                                    <div class="attributes resource-block">
-                                                        <span class="attribute-icon" style="float:left"><img class="img-car" src="https://www.izihuren.nl/wp-content/uploads/2018/10/LD_car@2x-2.png" alt=""></span>
-
-                                <label class="custom-block">
-                                  
-                                        <input type="checkbox" name="extras[]" onclick="calculateTotal()" id="includeExtraInsurance1"  name="includeExtraInsurance1" value="Verlagen eigen risico van €1900,- naar €550 ( €7.50 - Per Dag )" data-name="Verlagen eigen risico van €1100,- naar €450" data-value-in="0" data-applicable="per_day" data-value="9.50" data-hourly-rate="0" data-currency-before="$" data-currency-after="" class="carrental_extras">
-                                        Protection vol et collision - Réduction de franchise 1900€ à 550€ 
-                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>7.50</span><span> - Per Dag</span></span>
-                        <span class="pull-right show_if_time" style="display: none;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span> - Per Hour</span>
-                                    </label>
+                                    
             </div>
             <div class="attributes resource-block">
               <span class="attribute-icon" style="float:left"><img class="img-car" src="https://www.izihuren.nl/wp-content/uploads/2018/10/LD_car@2x-2.png" alt=""></span>
 
           <label class="custom-block">
           <input type="checkbox" name="extras[]" onclick="calculateTotal()" id="includeExtraInsurance2"  name="includeExtraInsurance2" value="Verlagen eigen risico van €1900,- naar €1200 ( €17.00 - Per Dag )" data-name="Verlagen eigen risico van €1100,- naar €450" data-value-in="0" data-applicable="per_day" data-value="9.50" data-hourly-rate="0" data-currency-before="$" data-currency-after="" class="carrental_extras">
-          Protection vol et collision - Réduction de franchise 1900€ à 1200€
-            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>17.00</span><span> - Per Dag</span></span>
-          <span class="pull-right show_if_time" style="display: none;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span> - Per Hour</span>
+          <span class="lang" key="insure22" ></span>
+            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>7.50</span><span class="lang" key="daylist"> </span></span>
           </label>
           </div>
+                                    <div class="attributes resource-block">
+                                                        <span class="attribute-icon" style="float:left"><img class="img-car" src="https://www.izihuren.nl/wp-content/uploads/2018/10/LD_car@2x-2.png" alt=""></span>
+
+                                <label class="custom-block">
+                                  
+                                        <input type="checkbox" name="extras[]" onclick="calculateTotal()" id="includeExtraInsurance1"  name="includeExtraInsurance1" value="Verlagen eigen risico van €1900,- naar €550 ( €7.50 - Per Dag )" data-name="Verlagen eigen risico van €1100,- naar €450" data-value-in="0" data-applicable="per_day" data-value="9.50" data-hourly-rate="0" data-currency-before="$" data-currency-after="" class="carrental_extras">
+                                        <span class="lang" key="insure12" ></span>
+                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>17.00</span><span class="lang" key="daylist"> </span></span>
+                                    </label>
+            </div>
+           
                                     <div class="attributes resource-block">
                                     <span class="attribute-icon" style="float:left"><i class="fa fas fa-user-plus"></i></span>
                                 <label class="custom-block">
                                         <input type="checkbox" name="extras[]" onclick="calculateTotal()" id="includeExtraDriver"  name="includeExtraDriver"  value="Extra bestuurder (€3.50 - Per Dag) " data-name="Extra bestuurder" data-value-in="0" data-applicable="per_day" data-value="4.50" data-hourly-rate="0" data-currency-before="$" data-currency-after="" class="carrental_extras">
-                                        Conducteur supplémentaire 
-                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>3.50</span><span> - Per Dag</span></span>
-                        <span class="pull-right show_if_time" style="display: none;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span> - Per Hour</span>
+                                           <span class="lang" key="driver2" ></span>
+                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>3.50</span><span class="lang" key="daylist"> </span></span>
                                     </label>
             </div>
                                     <div class="attributes resource-block">
                                     <span class="attribute-icon" style="float:left"><i class="fa fa fa-car"></i></span>
                                 <label class="custom-block">
                                         <input type="checkbox" name="extras[]" onclick="calculateTotal()" id="includeExtraWheels"  name="includeExtraWheels"  value="Ruiten en banden ( €5.50 Per Dag)" data-name="Ruiten en banden" data-value-in="0" data-applicable="per_day" data-value="3.50" data-hourly-rate="0" data-currency-before="$" data-currency-after="" class="carrental_extras">
-                                        Protection pneus et vitres 
-                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>5.50</span><span> - Per Dag</span></span>
-                        <span class="pull-right show_if_time" style="display: none;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span> - Per Hour</span>
+                                        <span class="lang" key="wheels2" ></span>
+                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>5.50</span><span class="lang" key="daylist"> </span></span>
                                     </label>
             </div>
                                     <div class="attributes resource-block">
@@ -342,9 +350,8 @@
 
                                 <label class="custom-block">
                                         <input type="checkbox" name="includeExtraNavi" onclick="calculateTotal()" checked=checked name="includeExtraNavi" value="Navigatiesysteem( €0.00 - Per Dag )" class="carrental_extras">
-                                        Navigation
-                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span><span> - Per Dag</span></span>
-                        <span class="pull-right show_if_time" style="display: none;"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span> - Per Hour</span>
+                                        <span class="lang" key="navi2" ></span>
+                                            <span class="pull-right show_if_day"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span><span class="lang" key="daylist"> </span></span>
                                     </label>
             </div>
                 </div>
@@ -353,14 +360,20 @@
     <p> 
     
       <div class="booking-pricing-info" style="">
-        <h3 class="booking_cost">Coût total <span style="float: right; margin-right: 10px">
-          <div id="totalPrice"></div>
+        <h3 class="lang booking_cost" key='totaleprice'> <span style="float: right; margin-right: 10px">
+    
         </span>
         </h3>
 
+        <h3 class="labelprice" > <span>
+          <div id="totalPrice"></div>
+        </span>
+        </h3>
+     
+
     </div>
     </p>
-<button type="submit"  id="disable"   class="btn btn-info">BOOK NU</button>
+<button type="submit"  id="disable"   class="lang btn btn-info" key="book"></button>
             </form>
       </div>
     </div>

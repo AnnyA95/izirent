@@ -175,174 +175,26 @@ span.amount {
   }
 }
 
-/*Color #e4e4e4*/
-.top-header .additional-information div,
-.top-header .additional-information div a,
-.top-header .additional-information div a:hover {
-  color: #e4e4e4 !important;
-}
 
-/*Color black*/
-body .navbar-default .navbar-nav > li > a {
-  color: black !important;
-}
 
-/*Color #2da5e9*/
-nav.navbar .navbar-nav li.active > a.dropdown-toggle,
-.navbar .navbar-nav li.active > a:focus,
-.navbar .navbar-nav li.active > a:hover,
-.navbar .navbar-nav li.current > a.dropdown-toggle,
-.navbar .navbar-nav li.current > a:focus,
-.navbar .navbar-nav li.current > a:hover,
-.navbar .navbar-nav li.open > a.dropdown-toggle,
-.navbar .navbar-nav li.open > a:focus,
-.navbar .navbar-nav li.open > a:hover,
-.rq-car-listing-wrapper
-  .rq-listing-choose.rq-listing-list-two
-  .listing-single
-  .listing-details
-  .listing-details-title
-  span
-  .price,
-.rq-search-content .rq-search-heading,
-.rq-title .rq-dot,
-.rq-car-listing-wrapper
-  .rq-listing-choose.rq-listing-list-two
-  .listing-single
-  .listing-details
-  .listing-footer
-  span
-  .price,
-.listing-single:hover .car-name a,
-.rq-car-listing-wrapper
-  .rq-listing-choose.rq-listing-list-two
-  .listing-single
-  .listing-details
-  .listing-feature
-  li:before,
-.rq-content-block2 .rq-sldebar-select h6,
-nav.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover,
-nav.navbar .navbar-nav li a:focus,
-.navbar .navbar-nav li a:hover,
-nav.navbar .navbar-nav li:hover > a,
-.rq-car-listing-wrapper
-  .rq-listing-choose.rq-listing-list-two
-  .listing-single
-  .listing-details
-  .listing-details-title
-  span
-  .price {
-  color: #2da5e9 !important;
-}
 
-/*background-color #2da5e9*/
-body .rq-listing-details .cart .button:active,
-body .rq-listing-details .cart .button,
-body .rq-listing-details .cart .button:hover,
-body .rq-listing-details .cart .button:focus,
-.child-tab-wrapper .rq-tab-car-details .large-image-wrapper .image-bg,
-.rq-car-listing-wrapper
-  .rq-listing-choose.rq-listing-list-two
-  .listing-single
-  .listing-details
-  .listing-footer
-  .btn-wrapper
-  .book-now-btn
-  a:hover,
-.woocommerce button.button:disabled,
-.woocommerce button.button:disabled[disabled],
-body .rq-listing-details .cart .button:active,
-.rq-listing-details .cart .button:focus,
-.rq-listing-details .cart .button:hover {
-  background-color: #2da5e9 !important;
-}
 
-.front-page-img-button-block .front-page-button a {
-  background-color: #efa80f !important;
-  border-color: #efa80f !important;
-}
-a.vc_general.vc_btn3.vc_btn3-size-lg.vc_btn3-shape-rounded.vc_btn3-style-modern.vc_btn3-color-sky {
-  background-color: #efa80f !important;
-  border-color: #efa80f !important;
-}
 
-/*________________________ Top Header _________________________*/
-.top-header {
-  background-color: black;
-  padding: 7px 0;
-}
 
-.top-header .additional-information div {
-  text-align: right;
-}
 
-.top-header .additional-information div a:hover {
-  cursor: pointer;
-}
 
-.top-header .additional-information div span {
-  margin-left: 25px;
-  margin-right: 25px;
-}
 
-.top-header .additional-information div span i {
-  font-size: 25px;
-  color: #a5cdef;
-  margin-left: 10px;
-  vertical-align: sub;
-  margin-right: 10px;
-}
 
-.top-header .additional-information div span .clock-font-size {
-  font-size: 20px;
-}
 
-/*________________________ Navigation modification _________________________*/
-.navbar-header .navbar-brand {
-  height: auto !important;
-}
 
-.navbar {
-  padding: 10px 0 !important;
-}
 
-nav#sticker {
-  z-index: 500 !important;
-}
 
-.navbar-brand > img {
-  width: 100%;
-  height: auto;
-}
 
-.header .header-body h1 {
-  font-size: 50px !important;
-  padding: 0 !important;
-}
 
-.header .header-body .rq-counting-list {
-  padding: 0 0 49px 0 !important;
-}
 
-.header .header-body {
-  height: auto !important;
-}
 
-#bs-example-navbar-collapse-1 {
-  margin-top: 16px;
-}
 
-/*________________________ Single product page _________________________*/
-body.single .rq-page-content .container > .rq-title-container {
-  margin: 25px 0;
-  background: #abb6bd59;
-  padding: 13px;
-}
 
-body.single .rq-content-block {
-  padding-top: 45px;
-}
 
 .bredcrumb-title .rq-title {
   padding-bottom: 10px !important;
@@ -353,74 +205,20 @@ body.single .rq-content-block {
   display: block;
 }
 
-.single-product .product-type-redq_rental .rq-listing-details .rq-change-button {
-  display: none !important;
-}
 
-body.single-product .rq-product-page-left .rq-product-sidebar-heading,
-body.single-product .rq-product-page-right .rq-product-sidebar-heading {
-  margin-bottom: 40px !important;
-}
 
-body.single-product .rnb-component-wrapper {
-  margin-bottom: 30px !important;
-}
 
-body.single-product .redq-date-time-picker input {
-  margin-bottom: 0 !important;
-}
 
-body.single-product .redq-date-time-picker,
-body.single-product .redq-variations,
-body.single-product .payable-extras {
-  overflow: hidden;
-}
 
-body.single-product
-  .redq-date-time-picker:first-of-type
-  .rq-listing-promo-wrapper
-  .rq-listing-promo-content
-  .rq-listing-item {
-  margin-bottom: 15px !important;
-}
 
-body.single-product .resource-block {
-  padding: 10px;
-  background: #dcdcdc69;
-  margin-bottom: 19px;
-  height: 50px;
-}
 
-.payable-extras h6 {
-  margin-bottom: 18px !important;
-}
 
-.redq-date-time-picker h6 {
-  margin-top: 0 !important;
-}
 
-/* Resource */
-.redq-variations label {
-  color: black !important;
-  font-weight: 100;
-}
 
-.redq-variations h6 {
-  text-transform: uppercase;
-  color: #2da5ec;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
 
-.resource-block .custom-block {
-  margin: 3px 0 0 0;
-  margin-bottom: 0 !important;
-}
 
-.resource-block .attribute-icon {
-  width: 30px;
-  text-align: center;
-}
+
+
 
 .resource-block span i {
   color: #42a6de;
@@ -480,407 +278,18 @@ body.single-product .resource-block {
   margin-right: 12px;
 }
 
-.rq-listing-promo-wrapper .rq-listing-promo-content .rq-listing-item h4 {
-  margin: 0;
-  color: #999;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 500;
-}
 
-.rq-listing-promo-wrapper .rq-listing-promo-content .rq-listing-item h6 {
-  display: none !important;
-}
 
-/*________________________ Home page _________________________*/
 
-.child-tab-wrapper .nav-tabs li img {
-  width: 125px !important;
-  height: 80px !important;
-}
 
-.rq-btn-primary {
-  color: white !important;
-}
 
-.rq-btn-primary:hover {
-  background-color: #62737c !important;
-}
-
-.rq-car-listing-wrapper .listing-single {
-  background-color: white !important;
-}
-
-body.page .rq-page-content div.rq-content-block.rq-listing-page {
-  background: #d6d6d64f !important;
-}
-
-.front-page-img-button-block {
-  margin-bottom: 2%;
-  position: relative;
-}
-.front-page-img-button-block .front-page-img h2 {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  top: 60px;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.front-page-img-button-block .front-page-button {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  top: 155px;
-}
-
-.front-page-img-button-block .front-page-button > button {
-  border: 1px solid #2da5e9 !important;
-  color: white !important;
-}
-
-.rq-content-block.no-bottom-padding {
-  padding: 80px 0 0 !important;
-}
-
-.home-page-phone-number .rq-call-to-action {
-  padding: 25px 0 !important;
-}
-
-/*Testimonials*/
-.rq-testimonial-section .rq-testimonial-content .rq-title {
-  font-size: 27px;
-  margin-bottom: 20px;
-}
-
-/*________________________ Listing page _________________________*/
-.listing-details-title span {
-  font-size: 17px !important;
-}
-
-.rq-car-listing-wrapper
-  .rq-listing-choose.rq-listing-list-two
-  .listing-single
-  .listing-details
-  .listing-details-title
-  .car-name {
-  width: 75% !important;
-}
-
-.rq-car-listing-wrapper
-  .rq-listing-choose.rq-listing-list-two
-  .listing-single
-  .listing-details
-  .listing-footer
-  .btn-wrapper
-  .book-now-btn
-  a:hover {
-  border-bottom: none;
-}
-
-.listing-footer .btn-wrapper .details-btn {
-  display: none;
-}
-
-footer .tabs-seo-footer-texts div {
-  border-bottom: 1px solid;
-}
-
-footer .tabs-seo-footer-texts h3 {
-  text-align: center;
-}
-
-.rq-car-listing-wrapper
-  .rq-listing-choose.rq-listing-list-two
-  .listing-single
-  .listing-details
-  .listing-details-title
-  span
-  .price {
-  font-size: 30px !important;
-}
-
-.listing-single .listing-details .listing-footer span a:hover {
-  border-color: #2da5e9 !important;
-}
-
-.rq-car-listing-wrapper .listing-single .listing-img img {
-  height: auto !important;
-  padding: 30px 0;
-  display: block;
-  margin: auto;
-  width: 300px !important;
-}
-
-.rq-main-footer .footer-widget h4.widget-title {
-  color: white !important;
-  margin: 5px 0;
-}
-
-.listing-single .listing-details .listing-footer span .price .amount {
-  color: #868686 !important;
-}
-
-.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single {
-  height: auto !important;
-}
-
-.rq-listing-grid .product-type-redq_rental .listing-single .listing-img {
-  width: 35%;
-  display: inline-block;
-}
-
-.rq-listing-grid .product-type-redq_rental .listing-single .listing-details {
-  display: inline-block;
-  width: 60%;
-}
-
-.rq-listing-promo-wrapper .rq-listing-promo-content .rq-listing-item {
-  width: 50% !important;
-}
-
-.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-1 {
-  width: 30%;
-}
-
-.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-img {
-  width: 35% !important;
-}
-
-.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-2 {
-  width: 30%;
-  border: 1px solid #8080807d;
-  padding: 10px;
-  margin-right: 50px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.rq-car-listing-wrapper
-  .rq-listing-choose.rq-listing-list-two
-  .listing-single
-  .listing-details-2
-  .listing-details-2-price-block
-  .price-per-day {
-  font-size: 18px;
-  color: black;
-}
-
-.listing-details-2 .listing-header {
-}
-
-.listing-details-2 .listing-footer {
-  text-align: center;
-  background-color: orange;
-  padding: 5px 0;
-  margin-left: 15px;
-  font-size: 11px;
-}
-
-.listing-details-2 .listing-footer a {
-  color: white;
-}
-
-.listing-details-2 .listing-header h4 {
-  margin: 8px 0;
-  color: orange;
-}
-
-.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single {
-  display: flex;
-  align-items: center;
-}
-
-.listing-details-1 .listing-attribute {
-  padding-left: 0 !important;
-}
-
-.listing-details-1 .listing-attribute li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 16px;
-  width: 44%;
-}
-
-.listing-details-1 .listing-attribute li span {
-  margin-left: 5px;
-  float: left;
-}
-
-.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .tb-find-a-car .listing-details-2 {
-  border: none;
-}
-
-.tb-find-a-car .listing-details-2 .listing-footer {
-  margin: auto;
-  margin-right: 0;
-}
-
-.listing-details-2 .listing-header {
-  width: 60%;
-  /*margin-left: 10px;*/
-}
-
-.listing-details-2 .listing-footer {
-  width: 40%;
-}
-
-/*________________________ Footer _________________________*/
-footer .tabs-seo-footer .tabs-seo-footer_item {
-  text-align: center;
-  margin-top: 60px;
-}
-
-footer .tabs-seo-footer_item p {
-  padding: 10px;
-  background-color: #2d2d31;
-  color: white;
-}
-
-.sidebar .booking-pricing-info h3.booking_cost span,
-.rq-listing-details .woocommerce-Price-amount,
-.rq-product-page-right .rq-product-sidebar-heading span.car-price,
-.rq-product-page-right .booking-section-single .attributes .custom-block span,
-.rq-product-page-left .booking-section-single .attributes .custom-block span {
-  color: black !important;
-  font-size: 17px;
-}
-
-.tb-footer-address-h4 {
-  margin: 0;
-}
-
-ul.tb-footer-address {
-  padding: 0;
-  margin: 0;
-}
-
-.tb-footer-address img {
-  margin-right: 10px;
-  width: 20px;
-  height: auto;
-}
-
-/*________________________ Checkout _________________________*/
-.rq-checkout-wrapper .panel-body {
-  padding: 75px !important;
-}
-
-.woocommerce-additional-fields h3 {
-  margin-left: 0 !important;
-}
-
-.img-icon {
-  width: auto;
-}
-
-.owl-nav div {
-  display: none !important;
-}
-
-.inner-page-banner .rq-title-container .rq-title {
-  line-height: 20px !important;
-  font-size: 20px !important;
-}
-
-.rq-testimonial-content .item .author-name-title {
-  margin-top: 30px !important;
-}
-
-.rq-testimonial-content {
-  padding: 45px !important;
-}
-
-.logged-in .woocommerce-additional-fields {
-  margin-top: 20px !important;
-  margin-bottom: 5%;
-}
-
-p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
-  text-align: center;
-  font-size: 20px;
-}
 
 /*_________________ Responsive design _____________________*/
 
 @media (max-width: 991px) {
   /*header*/
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: black !important;
-  }
 
-  .navbar-header > a {
-    padding-left: 20px !important;
-  }
 
-  body .navbar-default .navbar-nav > li > a {
-    color: white !important;
-  }
-
-  .menu-turbo-menu-container {
-    margin-top: 30px;
-  }
-
-  #bs-example-navbar-collapse-1 {
-    margin: 0;
-  }
-
-  .navbar-header .navbar-toggle {
-    margin-top: 15px;
-  }
-
-  /*Front page*/
-  .front-page-img-button-block .front-page-img h2 {
-    font-size: 20px;
-    top: 16px;
-    margin-bottom: 5px;
-  }
-
-  .front-page-img-button-block .front-page-button > button {
-    padding: 10px;
-    border: 2px solid #2da5e9 !important;
-  }
-
-  .front-page-img-button-block .front-page-button {
-    top: 47%;
-  }
-
-  /*Single page*/
-  body.single-product .redq-date-time-picker .rm-pad-first {
-    margin-bottom: 15px !important;
-  }
-
-  .rq-product-page-left .rq-content-block-left .rm-pad-first,
-  .rq-product-page-right .rq-content-block-right .rm-pad-first {
-    padding-right: 0 !important;
-  }
-
-  .rq-checkout-wrapper .panel-body {
-    padding: 50px !important;
-  }
-
-  /*Checkout*/
-  .mobile-checkout-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .mobile-checkout-container .mobile-order-2 {
-    order: 2;
-  }
-
-  .mobile-checkout-container .mobile-order-1 {
-    order: 1;
-  }
-
-  .mobile-checkout-container .mobile-order-3 {
-    order: 3;
-  }
 
   .resource-block img {
     width: 25px;
@@ -898,100 +307,9 @@ p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-rece
     margin: 0;
   }
 
-  .rq-listing-details .woocommerce-Price-amount,
-  .rq-product-page-right .rq-product-sidebar-heading span.car-price,
-  .rq-product-page-right .booking-section-single .attributes .custom-block span,
-  .rq-product-page-left .booking-section-single .attributes .custom-block span {
-    font-size: 13px;
-  }
-
-  .rq-listing-details .cart {
-    padding: 0 !important;
-  }
-
-  .rq-product-page-left .rq-content-block-left {
-    padding: 0 15px 10px 15px;
-    border-right: 1px solid #ebebeb;
-  }
-
-  .rq-product-page-right .rq-content-block-right {
-    padding: 0 !important;
-    border-left: none !important;
-  }
-
-  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single {
-    display: block !important;
-  }
-
-  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-img {
-    width: 100% !important;
-  }
-
-  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-1 {
-    width: 100% !important;
-    text-align: center;
-  }
-
-  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-2 {
-    width: 50% !important;
-    margin: 20px auto;
-  }
-
-  /*Listing page*/
-  .tb-find-a-car .listing-details-2 .listing-footer {
-    margin: auto;
-  }
 }
 
-@media (max-width: 648px) {
-  .front-page-img-button-block .front-page-img h2 {
-    font-size: 18px;
-    top: 8px;
-  }
 
-  .front-page-img-button-block .front-page-button {
-    top: 77px;
-  }
-
-  .front-page-img-button-block .front-page-button > button {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .listing-details-1 .listing-attribute {
-    padding-left: 20px !important;
-  }
-  .listing-details-1 .listing-attribute li {
-    width: 100%;
-  }
-}
-
-@media (max-width: 991px) {
-  .listing-details-1 .listing-attribute {
-    width: 50%;
-    margin: auto;
-    padding-left: 60px !important;
-  }
-
-  .listing-details-1 .listing-attribute li {
-    width: 100%;
-    text-align: left;
-  }
-}
-
-@media (max-width: 768px) {
-  .rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two .listing-single .listing-details-2 {
-    width: 90% !important;
-    border: none;
-  }
-
-  .listing-details-1 .listing-attribute {
-    width: 50%;
-    margin: auto;
-    padding-left: 20px !important;
-  }
-}
 
 @media (max-width: 500px) {
   /*________ Header_____ */
@@ -1004,23 +322,7 @@ p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-rece
   }
 
   /*________ Front page_____ */
-  .front-page-img-button-block .front-page-img h2 {
-    font-size: 16px;
-    top: 14px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .front-page-img-button-block .front-page-button {
-    top: 57px;
-  }
-
-  .front-page-img-button-block .front-page-button > button {
-    font-size: 11px;
-  }
-
-  body.single-product .resource-block {
-    height: 60px;
+ 
   }
 
   /*________ Single page _____ */
@@ -1066,16 +368,18 @@ p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-rece
 body {
   background: #fff;
 }
-.rq-listing-choose.rq-listing-list-two {
-  transition: box-shadow 0.3s;
-}
-.rq-car-listing-wrapper .rq-listing-choose.rq-listing-list-two:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
-}
+
 
 
 .resource-block .custom-block {
   margin: 23px 0 0 0;
   margin-bottom: 0 !important;
   
+}
+
+div#totalPrice {
+  position: absolute;
+  right: 82px;
+  top: 10p;
+  bottom: 131px;
 }

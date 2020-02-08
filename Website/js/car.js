@@ -42,6 +42,20 @@ $(document).ready(function() {
        
     
       });
+
+          
+      $('#datetimepicker10').datetimepicker({
+        useCurrent: true,
+        format: 'LL',
+        widgetPositioning: {
+          horizontal: 'left',
+          vertical: 'bottom'
+      }
+       
+    
+        
+        
+    });
   
       $("#datetimepicker7").on("dp.change", function (e) {
         $('#datetimepicker8').data("DateTimePicker").minDate(e.date);
@@ -99,7 +113,7 @@ $(document).ready(function() {
        
   function getCarKMPrice()
   {  
-    debugger
+    
       var carKmPrice=0;
       var theForm = document.forms["carform"];
       var selectedKM = theForm.elements["selectedKM"];
@@ -135,7 +149,7 @@ $(document).ready(function() {
  function ExtraAnwb()
  {
  
-   debugger
+   
      var extraPricein0=0;
      var theForm = document.forms["carform"];
      var includeExtra = theForm.elements["includeExtra"];
@@ -154,13 +168,13 @@ $(document).ready(function() {
   function ExtraPriceInsurance1()
   {
   
-    debugger
+    
       var extraPricein1=0;
       var theForm = document.forms["carform"];
       var includeExtra = theForm.elements["includeExtraInsurance1"];
 
       if(includeExtra.checked==true){
-        extraPricein1=7.50;
+        extraPricein1=17.00;
         localStorage.setItem('insure1', includeExtra.value);
       }else{
         extraPricein1 = 1
@@ -178,7 +192,7 @@ $(document).ready(function() {
       var theForm = document.forms["carform"];
       var includeExtra = theForm.elements["includeExtraInsurance2"];
       if(includeExtra.checked==true){
-        extraPricein2=17;
+        extraPricein2=7.50;
         localStorage.setItem('insure2', includeExtra.value);
       }else {
         extraPricein2 = 1
@@ -258,8 +272,10 @@ $(document).ready(function() {
       var Difference_In_Time = date2.getTime() - date1.getTime(); 
         
       var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
-      debugger     
-      var KM = getCarKMPrice()
+           
+      var KM = getCarKMPrice() 
+      
+
 
       switch (KM) {
         case 55:
@@ -279,7 +295,7 @@ $(document).ready(function() {
       var totalDaysStartEnd =  carPrice * Difference_In_Days
       
       var special  = ''
-       debugger
+       
        var extraanv =  ExtraAnwb()
        var extra = ExtraPriceInsurance1() 
        var extrain = ExtraPriceInsurance2()
@@ -316,7 +332,7 @@ $(document).ready(function() {
      
 
       if(special == Difference_In_Days){
-        debugger
+        
         var eraf =  special + Difference_In_Days
         var carPrice = totalDaysStartEnd  + special - eraf 
       }else{
@@ -324,7 +340,7 @@ $(document).ready(function() {
       }
   
 
-      debugger
+      
       var divobj = document.getElementById('totalPrice');
       divobj.style.display='block';
       divobj.innerHTML = "€ " + carPrice;

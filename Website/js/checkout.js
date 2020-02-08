@@ -1,3 +1,4 @@
+
 function addComment()
 {
 
@@ -7,8 +8,14 @@ function addComment()
   
   var begin = parameters[0].split("=");
   var eindd = parameters[2].split("=")
+  
+
   let price =localStorage.getItem('price');
   let totaldays =localStorage.getItem('totaldays');
+
+  
+  
+  
   let anwb =localStorage.getItem('anwb');
   let insure1 = localStorage.getItem('insure1');
   let insure2 = localStorage.getItem('insure2');
@@ -23,24 +30,26 @@ function addComment()
   let begindate = moment(new Date(s)).format("DD/MM/YYYY");
    
 
-  begintijd = parameters[1].split("=");
-  begintijdt = decodeURIComponent(begintijd[1]);
+    begintijd = parameters[1].split("=");
+    begintijdt = decodeURIComponent(begintijd[1]);
+
 
     
-  
-  inleverdatum = decodeURIComponent(eindd[1]);
+    inleverdatum = decodeURIComponent(eindd[1]);
+    var datum = inleverdatum.replace(/\+/g, '');
 
-  var datum = inleverdatum.replace(/\+/g, '');
+    let datumformateind = moment(new Date(datum)).format("DD/MM/YYYY");
+     
+    inlevertijd = parameters[3].split("=");
+    tijdein = decodeURIComponent(inlevertijd[1]);
 
-  let datumformateind = moment(new Date(datum)).format("DD/MM/YYYY");
-   
-  inlevertijd = parameters[3].split("=");
-  tijdein = decodeURIComponent(inlevertijd[1]);
 
-  
 
-  temp3 = parameters[4].split("=");
-  km = decodeURIComponent(temp3[1]);
+    temp3 = parameters[4].split("=");
+    km = decodeURIComponent(temp3[1]);
+    document.getElementById("km").innerHTML = km;
+
+
 
 
   
@@ -73,17 +82,16 @@ if(wheels ==  null){
 
 
 if(navi ==  null){
-  debugger
   var element = document.getElementById("6");
   element.classList.remove("lang");
 }
   
 
-  // setting the values
-  document.getElementById("begind").innerHTML = begindate;
-  document.getElementById("begint").innerHTML = begintijdt;
-  document.getElementById("eindd").innerHTML = datumformateind;
-  document.getElementById("eindt").innerHTML = tijdein;
+ 
+document.getElementById("begind").innerHTML = begindate;
+document.getElementById("begint").innerHTML = begintijdt;
+document.getElementById("eindd").innerHTML = datumformateind;
+document.getElementById("eindt").innerHTML = tijdein;
   document.getElementById("1").innerHTML = anwb;
   document.getElementById("2").innerHTML = insure1;
   document.getElementById("3").innerHTML = insure2;
@@ -92,7 +100,7 @@ if(navi ==  null){
   document.getElementById("6").innerHTML = navi;
 
   document.getElementById("price").innerHTML = price;
-  document.getElementById("sub").innerHTML = price;
+
   document.getElementById("totaldays").innerHTML = totaldays;
   document.getElementById("km").innerHTML = km;
 }
@@ -105,12 +113,63 @@ addComment();
 
 
 function sendMail() {
-  debugger
+  var form = $('form');
+  var checkit =  form.hasClass("needs-validation was-validated")
+
+ 
+ 
+  var valid = this.validateForm( form)
+  
+  if(valid ){
+   
+    sendEmails()
+    event.preventDefault()
+  
+    
+ 
+    
+  }else{
+  event.preventDefault()
+
+    
+  }
+
+};
+
+
+function validateForm(form){
+  var agreement =  document.getElementById("check");
+  var elments = []
+  var filledin = new Array
+  elements = form[0].elements
+  for(var i = 0; i < elements.length; i++)
+  {
+    if(elements[i].value){
+      filledin.push(elements[i].value)
+       
+    }
+ 
+    
+  }
+ 
+
+ if(filledin.length == 14 && agreement.checked) {
+   
+    return true
+  } 
+
+  return false
+  
+}
+
+
+function sendEmails() {
   var pickupdatestart = document.getElementById('begind').innerHTML;
   var pickupdatestarttime = document.getElementById('begint').innerHTML;
   var pickupdateend = document.getElementById('eindd').innerHTML;
   var pickupdateendtime = document.getElementById('eindt').innerHTML;
   var days = document.getElementById('totaldays').innerHTML;
+
   var km = document.getElementById('km').innerHTML;
   var price = document.getElementById('price').innerHTML;
   var anwb = document.getElementById('1').innerHTML;
@@ -123,48 +182,100 @@ function sendMail() {
   var email = $('#email').val();
   var name = $('#name').val();
   var lastname = $('#lastname').val();
+
+  var birthdate = $('#birthdate').val();
   var country = $('#country').val();
   var street = $('#street').val();
   var zipcode = $('#zipcode').val();
   var city = $('#city').val();
   var phone = $('#phone').val();
-  var payment =   $('#payment').val();
-  var message = $('#info').val();
-  var valid = this.emailValidate(email)
+  var payment =  $("input[name='payment']:checked").val()
+  var salutation =  $("input[name='salutation']:checked").val()
+  var messages = $('#info').val();
+  var agreement = $('#agrement').val();
+  body = 
+  "<h3>Requested car</h3>" +
+  productname + ' (' + email + ')' +
+  "<h4> Personal info </h4>" +
+ "<span style=font-weight:bold>Name</span>" + ":" + ' ' + salutation + " " + name + 
+ '<br/>' +
+ "<span style=font-weight:bold>Lastname</span>" + ":" + ' '  + lastname + 
+ '<br/>' +
+ "<span style=font-weight:bold>Email</span>" + ":" + ' '  + email + 
+ '<br/>' +
+ "<span style=font-weight:bold>Birthdate</span>" + ":" + ' '  + birthdate + 
+ '<br/>' +
+ "<span style=font-weight:bold>Phone</span>" + ":" + ' '  + phone + 
+ "<h4> Adress info </h4>" +
+ "<span style=font-weight:bold>Country</span>" + ":" + ' '  + country + 
+ '<br/>' +
+ "<span style=font-weight:bold>City</span>" + ":" + ' '  + city + 
+ '<br/>' +
+ "<span style=font-weight:bold>street</span>" + ":" + ' '  + street + 
+ '<br/>' +
+ "<span style=font-weight:bold>Zipcode</span>" + ":" + ' '  + zipcode + 
+ "<h4> Car info </h4>" +
+
+ "<span style=font-weight:bold>Pickup Date</span>" + ":" + ' '  + pickupdatestart + 
+ '<br/>' +
+ "<span style=font-weight:bold>Pickup Time</span>" + ":" + ' '  + pickupdatestarttime + 
+ '<br/>' +
+ "<span style=font-weight:bold>Return Date</span>" + ":" + ' '  +  pickupdateend + 
+ '<br/>' +
+ "<span style=font-weight:bold>Return Time</span>" + ":" + ' '  +  pickupdateendtime + 
+ '<br/>' +
+ "<span style=font-weight:bold>KM</span>" + ":" + ' '  + km + 
+ '<br/>' +
+ "<span style=font-weight:bold>Price</span>" + ":" + ' '  + price + 
+ '<br/>' +
+ "<span style=font-weight:bold>Days</span>" + ":" + ' '  + days + 
+ '<br/>' +
+ "<span style=font-weight:bold>Payment</span>" + ":" + ' '  + payment + 
+ 
+ "<h4> Car options </h4>" +
+ "<span style=font-weight:bold>Help</span>" + ":" + ' '  + anwb + 
+ '<br/>' +
+ "<span style=font-weight:bold>Insurance 1</span>" + ":" + ' '  + insure1 + 
+ '<br/>' +
+ "<span style=font-weight:bold>Insurance 2</span>" + ":" + ' '  + insure2 + 
+ '<br/>' +
+ "<span style=font-weight:bold>Driver</span>" + ":" + ' '  + driver + 
+ '<br/>' +
+ "<span style=font-weight:bold>Wheels</span>" + ":" + ' '  + wheels + 
+ '<br/>' +
+ "<span style=font-weight:bold>Navigation</span>" + ":" + ' '  + nav + 
+ '<br/>' +
+ "<span style=font-weight:bold>Extra info</span>" + ":" + ' '  + messages + 
+ "",
+
   
-  if(valid){
-    window.location.href = 'mailto:anni032@hotmail.com?subject=The subject - ' + productname + ' (' + email + ')' + '&body=' + 
-    "PERSONALINFO" + "%3A%20" + "%0D%0A" +  "Name:" + "%20"  + name  +  "%0D%0A" +  "Lastname:" + "%20" + lastname   +  "%0D%0A" +  "Phone:" + "%20" +  phone + "%0D%0A" + 
-    "%0D%0A" + "ADRES" + "%3A%20" +   "%0D%0A" +  "Country:" + "%20"  + country  +  "%0D%0A" +  "City:" + "%20" + city   +  "%0D%0A" +  "Street:" + "%20" +  street +   "%0D%0A" +  "zipcode:" + "%20" +  zipcode +
-    
-    
-   "%0D%0A" +  "%0D%0A" +  "CARINFO:" + "%20" +  "%0D%0A"   + 'Pick-up date:' + "%20"  + pickupdatestart  +  "%0D%0A" +  "Pick-up time:" + "%20" + pickupdatestarttime   +  "%0D%0A" +  "Returndate:" + "%20" +  pickupdateend +   "%0D%0A" +  "Return time:" + "%20" +  pickupdateendtime +
-    "%0D%0A" +  "Price:" + "%20" +  price +   "%0D%0A" +  "Days:" + "%20" +  days +  "%0D%0A" +  "Km:" + "%20" +  km +
-   
-
-    
-    "%0D%0A" + "%0D%0A" + 
-    "EXTRAS" +  "%3A%20" + "%0D%0A" +  "-" + anwb  +  "%0D%0A" +  "-" + insure1 + "%0D%0A" +  "-" + insure2 +  "%0D%0A" + "-" + driver  + "%0D%0A" + "-" + wheels + "%0D%0A" + "-" + nav
-
-    event.preventDefault()
-    this.redirect()
-    
-  }else{
-    event.preventDefault()
   
-  }
+    Email.send({
+      Host : "smtp.gmail.com",
+      Username : "izirentr@gmail.com",
+      Password : "vmkfvC6M3DCNpXYFur44",
+      To : 'izirentr@gmail.com',
+      From : email,
+      Subject : "Requested car" + ": " + productname,
+      Body :  body
+  }).then(
+    message => console.log(message),
+    setTimeout(function(){ 
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "izirentr@gmail.com",
+        Password : "vmkfvC6M3DCNpXYFur44",
+        To : email,
+        From : 'izirentr@gmail.com"',
+        Subject : "Order recieved",
+        Body : 'Thank you for your order '
+    })
+    location.replace("./confirmation.html")}, 1100)
+  );
+ 
 
-};
 
-function redirect() {
-location.replace("/Users/annyaidinian/Desktop/GitHub/izirent/Website/confirmation.html")
+ 
 }
 
 
-function emailValidate(email){
-var check = "" + email;
-if((check.search('@')>=0)&&(check.search(/\./)>=0))
-    if(check.search('@')<check.split('@')[1].search(/\./)+check.search('@')) return true;
-    else return false;
-else return false;
-}

@@ -1,184 +1,55 @@
+<html>
+<head>
 
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        var myform = $("#myform");
+myform.submit(function(event){
+	event.preventDefault();
 
+  // Change to your service ID, or keep using the default service
+  var service_id = "default_service";
+  var template_id = "template_UDHD4SYP";
 
-
-
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  myform.find("button").text("Sending...");
+  emailjs.sendForm(service_id,template_id,myform[0])
+  	.then(function(){ 
+    	alert("Sent!");
+       myform.find("button").text("Send");
+    }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("Send");
+    });
+  return false;
+});
+    </script>
+</head>
+<body>
+  <form id="myform" method="post">
+    <label>reply_to</label>
+    <input type="text" name="reply_to" />
+    <label>from_name</label>
+    <input type="text" name="from_name" />
+    <label>to_name</label>
+    <input type="text" name="to_name" />
+    <label>message_html</label>
+    <input type="text" name="message_html" />
+    <br><br>
+    <button>
+    Send
+    </button>
+    </form>
     
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel='shortcut icon' type='image/x-icon' href='./img/image3.png' />
-
-    <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-
-    <!-- Custom styles for this template -->
-    <link href="css/index.css" rel="stylesheet">
-    <link href="./flag-icon-css-master/css/flag-icon.css" rel="stylesheet">
-
-      <title>RentIT</title>
-      <script type="text/javascript" src="./js/index.js"></script>
-      <script type="text/javascript" src="./js/translate.js"></script>
-      
-
-      <!-- Bootstrap core CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-      
-      <!--Fontawesome-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
-    <!-- Custom styles for this template -->
-    <link href="css/index.css" rel="stylesheet">
-    <link href="css/cars.css" rel="stylesheet">
-  </head>
-  <body>
-      <header>
-
-          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
-              <img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt="">
-         
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#" onclick="go()" id="carsButton">Book</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us </a>
-                </li>
-                
-            </div>
-            <div class="collapse navbar-collapse" id="navbarCollapse"></div>
-         
-      
-              </ul>
-              </div>
-              <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
-                 <i  id="test"></i>
-      
-                <div id="myDropdown" class="dropdown-content">
-                  <a class="translate" id="fr" class="btn btn-info" role="button">Français</a>
-                  <a class="translate" id="nl" class="btn btn-info" role="button">Nederlands</a>
-                  <a class="translate" id="eng" class="btn btn-info" role="button">English</a>
-                  
-                </div>
-              </button>
-          </nav>
-      
-        </header>
-      <div class="container">
-          <div class="rq-title-container bredcrumb-title">
-              
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_9kDlCzu8HcgNx1DXr1n75");
+       })();
+    </script>
+</body>
+</html>
 
 
-    <h2 class="rq-title">Mercedes Vito 9 persoons</h2>
-
-
-<!-- <h2 class="pull-left">News</h2> -->
-
-      
-
-        
-        <form action="" id="cakeform" onsubmit="return false;">
-      
-           <legend>Make your cake!</legend>
-           <label >Size Of the Cake</label>
-           <input type="radio"   name="selectedcake" value="Round6"
-           onclick="calculateTotal()" />
-           Round cake 6" -  serves 8 people ($20)
-           <input type="radio"  name="selectedcake" value="Round8"
-           onclick="calculateTotal()" />
-           Round cake 8" - serves 12 people ($25)
-           <input type="radio"  name="selectedcake" value="Round10"
-           onclick="calculateTotal()" />
-           Round cake 10" - serves 16 people($35)
-           <input type="radio"  name="selectedcake" value="Round12"
-           onclick="calculateTotal()" />
-           Round cake 12" - serves 30 people($75)
-        
-         
-           <br/>
-           <p>
-           <label for='includecandles' class="inlinelabel">
-           Include Candles($5)</label>
-           <input type="checkbox" id="includecandles" name='includecandles'
-           onclick="calculateTotal()" />
-          </p>
-        
-           <p>
-           <label class="inlinelabel" for='includeinscription'>
-           Include Inscription($20)</label>
-           <input type="checkbox" id="includeinscription"
-           name="includeinscription" onclick="calculateTotal()" />
-        
-           <input type="text"  id="theinscription"
-           name="theinscription" value="Enter Inscription"  />
-           </p>
-           <div id="totalPrice"></div>
-        
-          
-       </form>
-       
-  <script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-  </script>
-
-  </body>
-
-
-
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-
-  </html>
-
-
-
-
-  

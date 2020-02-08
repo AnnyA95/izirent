@@ -29,8 +29,10 @@
 
 <body>
     <header>
+        
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
-            <img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt="">
+            <a href="./index.html"><img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt=""></a>
+            
        
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,10 +40,10 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="go()" id="carsButton">Book</a>
+                <a class="nav-link" href="#" onclick="go()" id="carsButton"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us </a>
+                <a class="nav-link" href="./contact.html"> </a>
               </li>
               
           </ul></div>
@@ -51,7 +53,7 @@
             
             
             <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
-               <i id="test" class="flag-icon flag-icon-gb"></i>
+               <i id="test" class="flag-icon flag-icon-fr"></i>
     
               <div id="myDropdown" class="dropdown-content">
                 <a class="translate" id="fr" role="button">Français</a>
@@ -62,9 +64,13 @@
         </nav>
 
     </header>
+    
     <br/>
+    
     <br/>
+    
     <div class="container">
+        
         <div class="rq-car-listing-wrapper">
 
             <div class="test rq-listing-choose rq-listing-list-two">
@@ -73,7 +79,7 @@
                     <div class="test col-md-12 col-sm-12">
                         <div class="listing-single">
                             <div class="listing-img dina">
-                                <a href=""><img src="./img/mercedes_vito2.png" alt="car"></a>
+                                <a href="./car.html"><img src="./img/mercedes_vito2.png" alt="car"></a>
                             </div>
                             <div class="listing-details-1">
                                 <div class="listing-details-title">
@@ -81,34 +87,42 @@
 
                                 <ul class="listing-attribute">
 
-                                    <li><i class="fa fa-passenger"></i> <span>Zitplaatsen 5</span></li>
+                                    <li><i class="fa fa-passenger"></i> <span class="lang " key="sit"></span></li>
 
-                                    <li><i class="fa fa-airco"></i> <span>Met airco</span></li>
+                                    <li><i class="fa fa-airco"></i> <span class="lang " key="airco"></span></li>
 
                                     <li><i class="fa fa-disel"></i> <span>Diesel</span></li>
 
-                                    <li><i class="fa fa-koffers"></i> <span>Koffers 5</span></li>
+                                    <li><i class="fa fa-koffers"></i> <span class="lang " key="bagage"></span></li>
 
-                                    <li><i class="fa fa-schakel"></i> <span>Automaat</span></li>
+                                    <li><i class="fa fa-schakel"></i> <span class="lang " key="gear"></span></li>
 
-                                    <li><i class="fa fa-door"></i> <span>Deuren 4</span></li>
+                                    <li><i class="fa fa-door"></i> <span class="lang " key="doors"></span></li>
 
                                 </ul>
 
                             </div>
                             <div class="listing-details-2">
                                 <div class="listing-header">
-                                    <h4>Het beste tarief, vanaf:</h4>
+                                    <h4 class="lang" key='advertise'></h4>
                                     <div class="listing-details-2-price-block">
-                                        <span class="price-per-day">€ <span class="price">55</span>, per dag</span>
+                                        <span class="price-per-day">€ <span class="price">55</span> 
+                                        <span class="lang" key='day'>
+                                       
+                                        </span>
+                                    
+                                    
+                                    
+                                    </span>
                                         <br>
-                                        <span>Totaal <span class="price">55.00</span> € </span>
+                                        <span class="lang" key='total'>
+                                             <span class="price">55.00</span> € </span>
                                     </div>
                                 </div>
 
                                 <div class="listing-footer">
                                     <div class="btn-wrapper">
-                                          <span class="book-now-btn"><a href="./car.html">RESERVEER NU</a></span>
+                                          <span class="book-now-btn" ><a class="lang" key="reservP" href="./car.html"></a></span>
                                     </div>
                                 </div>
                             </div>
@@ -124,37 +138,44 @@
                                 <div class="listing-details-title">
                                     <h3 class="car-name"><a href="">Volkswagen Transporter </a></h3></div>
 
-                                <ul class="listing-attribute">
+                                    <ul class="listing-attribute">
 
-                                    <li><i class="fa fa-passenger"></i> <span>Zitplaatsen 5</span></li>
-
-                                    <li><i class="fa fa-airco"></i> <span>Met airco</span></li>
-
-                                    <li><i class="fa fa-disel"></i> <span>Diesel</span></li>
-
-                                    <li><i class="fa fa-koffers"></i> <span>Koffers 5</span></li>
-
-                                    <li><i class="fa fa-schakel"></i> <span>Automaat</span></li>
-
-                                    <li><i class="fa fa-door"></i> <span>Deuren 4</span></li>
-
-                                </ul>
+                                        <li><i class="fa fa-passenger"></i> <span class="lang " key="sit"></span></li>
+    
+                                        <li><i class="fa fa-airco"></i> <span class="lang " key="airco"></span></li>
+    
+                                        <li><i class="fa fa-disel"></i> <span>Diesel</span></li>
+    
+                                        <li><i class="fa fa-koffers"></i> <span class="lang " key="bagage"></span></li>
+    
+                                        <li><i class="fa fa-schakel"></i> <span class="lang " key="gear"></span></li>
+    
+                                        <li><i class="fa fa-door"></i> <span class="lang " key="doors"></span></li>
+    
+                                    </ul>
 
                             </div>
                             <div class="listing-details-2">
                                 <div class="listing-header">
-                                    <h4>Het beste tarief, vanaf:</h4>
+                                    <h4 class="lang" key='advertise'></h4>
                                     <div class="listing-details-2-price-block">
-                                        <span class="price-per-day">€ <span class="price">55</span>, per dag</span>
+                                        <span class="price-per-day">€ <span class="price">55</span> 
+                                        <span class="lang" key='day'>
+                                       
+                                        </span>
+                                    
+                                    
+                                    
+                                    </span>
                                         <br>
-                                        <span>Totaal <span class="price">55.00</span> € </span>
+                                        <span class="lang" key='total'>
+                                             <span class="price">55.00</span> € </span>
                                     </div>
                                 </div>
 
                                 <div class="listing-footer">
                                     <div class="btn-wrapper">
-                                        <span class="book-now-btn"><a href="">RESERVEER NU</a></span>
-                                      
+                                          <span class="book-now-btn" ><a class="lang" key="reservP" href="./car.html"></a></span>
                                     </div>
                                 </div>
                             </div>
@@ -190,10 +211,9 @@
                         <div class="col-xs-12 col-sm-3 col-md-3">
                             <h5>Quick links</h5>
                             <ul class="list-unstyled quick-links">
-                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Véhicules </a></li>
-                                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                                <li><a href="./index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                                <li><a href="./products.html"><i class="fa fa-angle-double-right"></i>Véhicules </a></li>
+                                <li><a href="./contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
                             </ul>
 
                         </div>
@@ -202,9 +222,9 @@
                             <ul class="list-unstyled quick-links">
                                 <li><a href="javascript:void();"><i class="fa fa-phone "></i> +32 488.27.71.08</a></li>
                                 <li><a href="javascript:void();">+32 486.15.56.75</a></li>
-                                <li><a href="javascript:void();"><i class="fa fa-at"></i> Izirent@gmail.be</a></li>
+                                <li><a href="javascript:void();"><i class="fa fa-at"></i> izirentr@gmail.com</a></li>
                                 <li><a href="https://api.whatsapp.com/send?phone=320488277108&text=I%20want%20to%20find%20out%20about%20your%20products"><i
-                class="fa fa-whatsapp"></i> 06-18440654</a></li>
+                class="fa fa-whatsapp"></i> 06-12346753</a></li>
 
                             </ul>
                             <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook fa-lg"></i></a>

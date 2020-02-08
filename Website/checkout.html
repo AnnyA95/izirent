@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
   
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -31,7 +31,6 @@
       <title>RentIT</title>
       <script type="text/javascript" src="./js/car.js" ></script>
       <script type="text/javascript" src="./js/translate.js"></script>
- 
 
       <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -50,7 +49,7 @@
       <header>
 
           <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
-              <img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt="">
+            <a href="./index.html"><img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt=""></a>
          
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
               aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +61,7 @@
                   <a class="lang nav-link" key="home" href="#" onclick="go()" id="carsButton"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us </a>
+                  <a class="nav-link" href="./contact.html">Contact us </a>
                 </li>
                 
             </div>
@@ -94,7 +93,7 @@
 <!-- <h2 class="pull-left">News</h2> -->
 <ol class="breadcrumb rq-subtitle secondary">
   <li id="crumbs"><span typeof="v:Breadcrumb">
-    <a rel="v:url" property="title" href="http://83.96.162.239/home.html">Home</a></span>&nbsp; → &nbsp;<span typeof="Breadcrumb"><a rel="url" property="v:title" href="http://83.96.162.239/products.html">Cars</a></span>&nbsp; → &nbsp;
+    <a rel="v:url" property="title" href="./index.html">Home</a></span>&nbsp; → &nbsp;<span typeof="Breadcrumb"><a rel="url" property="v:title" href="./products.html">Cars</a></span>&nbsp; → &nbsp;
     <a rel="v:url" property="title" href="">Checkout</a></span>&nbsp; → &nbsp;<span typeof="Breadcrumb"></span>
     <span id='product' class="current">Mercedes Vito 9 persoons</span></li></ol>  </div>
       </div>
@@ -103,15 +102,15 @@
  
 <div class="container">
     <div class="row">
-        <div class="col-sm-4">
-                 <h5>Artikel</h5>
+        <div class="col-sm-5">
+                
             
                      
              
                  
               
              <div class="card" >
-                   <div class="card-header">
+                   <div key='chosenProduct' class=" lang card-header">
     Artikel is 
   </div>
   <br/>
@@ -119,9 +118,9 @@
             
   <div class="card-body">
 
-  <div class="col-md-6 mobile-order-2">
+  <div class="col-md-12 mobile-order-3">
                                     <div class="panel-subtitle">
-                                      <h5 >Uw bestelling:</h5>
+                                      <h5 class="extra" >Extra's:</h5>
 
                                     </div>
 
@@ -143,20 +142,20 @@
             <tr class="variation-Resources"><p class="lang" key="wheels" id="5"><span class="woocommerce-Price-amount amount">
               <tr class="variation-Resources"><p class="lang" key="navi" id="6"><span class="woocommerce-Price-amount amount">
 </dd>
-			<dt class="variation-Ophaaldatumentijd">Ophaal datum en tijd:</dt>
-    <dd class="variation-Ophaaldatumentijd">      <p> <span id="begind"></span> om </p> <span id="begint"></span></p>
+			<dt  key="takedatetime" class=" lang variation-Ophaaldatumentijd"></dt>
+    <dd class="variation-Ophaaldatumentijd">      <p> <span id="begind"></span> <span class="lang" key="timeprefix"></span> </p> <span id="begint"></span></p>
 
    
 </dd>
-			<dt class="variation-InleverdatumenTijd">Inleverdatum en Tijd:</dt>
-      <dd class="variation-Ophaaldatumentijd">      <p> <span id="eindd"></span> om </p> <span id="eindt"></span></p>
+			<dt  key="retourdatetime" class="lang variation-InleverdatumenTijd"></dt>
+      <dd class="variation-Ophaaldatumentijd">      <p> <span id="eindd"></span><span class="lang" key="timeprefix"></span></p> <span id="eindt"></span></p>
 
  
 </dd>
-			<dt class="variation-TotalDays">Total Days:</dt>
+			<dt key="totaldaysc" class="lang variation-TotalDays"></dt>
 		<dd class="variation-TotalDays"><p id="totaldays"></p>
 </dd>
-			<dt class="variation-Totalkm">Total km:</dt>
+			<dt key="totalkmc" class=" lang variation-Totalkm"></dt>
 		<dd class="variation-Totalkm"><p id="km"></p>
 </dd>
 	</dl>
@@ -165,20 +164,11 @@
 					</tbody>
 	<tfoot>
 
-		<tr class="cart-subtotal">
-      <th>Subtotaal</th>
-    
-      <td><strong><span class="woocommerce-Price-amount amount"></span><span class="woocommerce-Price-currencySymbol"> € <span id="sub"></span> </strong> </td>
-		</tr>
 
-		
-		
-		
-		
-		
+
 		<tr class="order-total">
-      <th>Totaal</th> 
-      <td><strong><span class="woocommerce-Price-amount amount"></span><span class="woocommerce-Price-currencySymbol"> € <span id="price"></span> </strong> </td>
+      <th class="lang" key="total" ></th>
+      <td><strong><span class="woocommerce-Price-amount amount"></span><span class="woocommerce-Price-currencySymbol"> &nbsp; € <span id="price"></span> </strong> </td>
       
 		</tr>
 
@@ -204,42 +194,74 @@
         </div>
         
         
-        <div class="col-sm-8">
-          <h5>Factuur gegevens</h5>
+        <div class="col-sm-6">
         
+          <form class="needs-validation"  id="carform" onsubmit="sendMail()" novalidate>
             
-            <form class="needs-validation" action="" id="carform" onsubmit="sendMail()" novalidate>
-            
-         
 
-                   <div class="form-row">
+        <div class="form-row">
+          <label class="lang" key="civility" for="form-check form-check">Civilité </label>
+          <div class="form-group col-md-12">
+           
+            <div class=" form-check-inline">
+              <input class="form-check-input" type="radio" name="salutation" id="salutation1" value="M," required checked>
+              <label key='men' class="lang form-check-label" for="salutation1"></label>
+            </div>
+            <div class="form-check-inline">
+              <input class="form-check-input" type="radio" name="salutation" id="salutation2" value="Mmn" required>
+              <label key="woman" class="lang form-check-label" for="salutation2"></label>
+        </div>
+        </div>
+
+     
+               
+                     
     <div class="form-group col-md-6">
-      <label for="input4">Voornaam</label>
-      <input type="text" value="Anny" class="form-control" id="name" required>
+      <label class="lang" key='firstname' for="input4"></label>
+      <input type="text" value="adsad" class="form-control" id="name" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="input4">Achternaam</label>
-      <input type="text"  value="Aidinian" class="form-control" id="lastname" required >
+      <label class="lang" key='lastname' for="input4"></label>
+      <input type="text"  value="das" class="form-control" id="lastname" required >
     
     </div>
 
 
-
+    
     <div class="form-group col-md-12">
-      <label for="">Land</label>
-      <input type="text"  value="Nederland" class="form-control" id="country" placeholder="" required>
+      <label class="lang" key="birthdate" for=""></label>
+      <span class="pick-up-date-picker">
+        <div class="input-group date" id="datetimepicker10">
+            <input type="text"  value="22-01-2011"  id="birthdate" name="birthdate" id="validationCustom01" placeholder="" class="form-control" required>
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span> 
+            </span>
+          </div>
+      
+    </span>
       
     </div>
+
+    <div class="form-group col-md-12">
+      <label class="lang" key='country' for=""></label>
+      <input type="text"  value="dasd" class="form-control" id="country" placeholder="" required>
+      
+    </div>
+
+
+
+
+ 
                 
        <div class="form-group col-md-12">
-                <label for="">Woonplaats</label>
-                <input type="text" value="Hoogvliet" class="form-control" id="city" placeholder="" required>
+                <label class="lang" key='city' for=""></label>
+                <input type="text" value="asd" class="form-control" id="city" placeholder="" required>
                 
               </div>
 
    <div class="form-group col-md-12">
-                <label for="">Straat/nummer</label>
-                <input type="text" value="Kouwenaardseweg 90" class="form-control" id="street" placeholder="" required>
+                <label class="lang" key="streetnum" for=""></label>
+                <input type="text" value="33" class="form-control" id="street" placeholder="" required>
                 
               </div>
 
@@ -247,36 +269,46 @@
 
 
                <div class="form-group col-md-12">
-                <label for="">Postcode</label>
-                <input type="text" value="3191tn" class="form-control" id="zipcode" placeholder="" required>
+                <label class="lang" key="zipcode" for=""></label>
+                <input type="text" value="3253tr" class="form-control" id="zipcode" placeholder="" required>
                 
               </div>
             
                  <div class="form-group col-md-12">
-      <label for="inputEmail4">Email</label>
-      <input type="email" value="a@hotmail.com" class="form-control" id="email" placeholder="Email" required>
+      <label class="lang" key='mail' for="inputEmail4"></label>
+      <input type="email" value="izirentr@gmail.com" class="form-control" id="email" placeholder="Email" required>
     </div>
 
               <div class="form-group col-md-12">
-      <label for="input">Telefoonnumer</label>
-      <input type="number" value="0612345678" class="form-control" id="phone" placeholder="Nummer" required>
+      <label class="lang" key='phone' for="input"></label class="lang" key='mail'>
+      <input type="number" value="0987" class="form-control" id="phone" placeholder="Nummer" required>
     </div>
 
+    <label  class="lang" key='payment' for="form-check form-check"></label>
     <div class="form-group col-md-12">
-      <label for="form-check form-check">Betaalwijze</label>
-      <div class="form-check form-check">
-        <input class="form-check-input" type="radio" name="agreeMarketProfiling" id="agreeMarketProfiling1" value="1" required>
-        <label class="form-check-label" for="agreeMarketProfiling1">Contant betalen</label>
+      <div class="form-check-inline">
+        <input class="form-check-input" type="radio" name="payment" id="contant" value="Cash" required checked>
+        <label class="lang form-check-label" key='cash' for="contant"></label>
       </div>
-      <div class="form-check form-check">
-        <input class="form-check-input" type="radio" name="agreeMarketProfiling" id="agreeMarketProfiling2" value="0" required>
-        <label class="form-check-label" for="agreeMarketProfiling2">Met kaart betalen</label>
+      <div class="form-check-inline">
+        <input class="form-check-input" type="radio" name="payment" id="card" value="Card" required>
+        <label class="lang form-check-label" key='card'  for="card"></label>
   </div>
+
   </div>
-  
+
+
+
+  <div class="form-check-inline">
+    <input class="form-check-input" type="checkbox" name="checkagremeent" id="check" value="" required checked>
+     <a href="./index.html"  class="lang form-check-label" key="agrement"  target="_blank" > </a>
+</div>
+<br/>
+<br/>
+
 
              <div class="form-group col-md-12">
-      <label for="input">Extra info</label>
+      <label class="lang" key="extrainfo" for="input"></label>
    <textarea  value="info" class="form-control rounded-0" id="info" rows="3">info</textarea>
     </div>
 
@@ -285,8 +317,9 @@
 
                  
       
-<button  type="submit"  id="disable"   class="btn btn-info" >Verzend</button>
-              </form>
+<button  type="submit"  id="disable" key='book'  class="lang btn btn-info" ></button>
+           
+        </form>
         </div>
       </div>
 
@@ -297,8 +330,6 @@
   </body>
 
 
-
-  
 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">

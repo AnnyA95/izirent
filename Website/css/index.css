@@ -437,3 +437,37 @@ h2.productheader {
   color: gray;
 }
 
+a#carsButton {
+  color: whitesmoke;
+  font-weight: bold;
+   font-size: 21px;
+  /* background-color: red; */
+ 
+}
+
+.text-muted {
+  color: #6c757d7d!important;
+}
+
+i.lang {
+  font-family: unset;
+  font-style: unset;
+}
+
+p.lang.lead {
+    text-align: justify;
+}
+
+.display-3 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+img.featurette-image.img-fluid.mx-auto {
+  position: inherit;
+  top: 87px;
+  width: auto;
+  height: auto;
+  max-width: -webkit-fill-available;
+}
