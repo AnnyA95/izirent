@@ -256,7 +256,8 @@ hr#second {
 
 /*Logo width mobile */
 img.logo {
-  width: 85px;
+  width: 145px;
+     content:url("../../Website/img/input-onlinepngtools\ \(1\).png");
   position: absolute;
    top: 50%;
    left: 50%;
@@ -357,6 +358,14 @@ and (orientation : portrait) {
     height: 295px;
     width: 314px;
   }
+  img.logo {
+    width: 133px;
+    content:url("../../Website/img/input-onlinepngtools\ \(1\).png");
+    /* top: 50%; */
+    left: 67%;
+    /* transform: translate(-50%, -50%); */
+}
+
 }
 
 @media only screen 
@@ -371,6 +380,12 @@ and (-webkit-min-device-pixel-ratio: 2) {
     height: 295px;
     width: 414px;
   }
+
+  img.logo {
+    content:url("../../Website/img/input-onlinepngtools\ \(1\).png");
+    width: 132px;
+      left: 55%;
+}
 }
 
 @media only screen 

@@ -4,7 +4,7 @@
   
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="shortcut icon" type="image/x-icon" href="./img/image3.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../Logo Final/Version Petit/Izi_Rent_Petit.jpg">
 
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -45,41 +45,50 @@
 
 </head>
 <body>
-    <header>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    
+               
+               
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+              <a class="nav-link" href="./index.html"></a>
+              <li class="nav-item">
+                <a class="nav-link" href="././contact.html">Contact </a>
+              </li>
+          <li class="nav-item">
+          
+          </li>
+            <li class="nav-item">
+     
+            </li>
+        </ul>
+        
+        <div id="photo_leftPanel">
+          <a  href="./index.html">  <img class="logo" onclick="goToHome()" alt="home"></a>
+       </div>
+      
+         
+      
+      </div>
+      <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
+        <i  id="test"></i>
 
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> 
-          <a href="./index.html"><img class=" navbar-brand logo" src="./img/1200px-Free_logo.svg.png" alt=""></a>
-       
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="./contact.html">Contact </a>
-              </li>
-            
-              <li class="nav-item">
-              </li>
-              
-          </ul></div>
-          <div class="collapse navbar-collapse" id="navbarCollapse"></div>
-       
+       <div id="myDropdown" class="dropdown-content">
+         <a class="translate" id="fr" class="btn btn-info" role="button">Français</a>
+         <a class="translate" id="nl" class="btn btn-info" role="button">Nederlands</a>
+         
+
+
+
+       </div>
+     </button>
+    </nav>
     
-            
-            
-            <button onclick="getLanguage()" id="dropbtn" class="btn btn-secondary">
-               <i id="test" class="flag-icon flag-icon-fr"></i>
-    
-              <div id="myDropdown" class="dropdown-content">
-                <a class="translate" id="fr" role="button">Français</a>
-                <a class="translate" id="nl" role="button">Nederlands</a>
-                
-              </div>
-            </button>
-        </nav>
-    
-      </header>
+  </header>
     <div class="container">
         <div class="rq-title-container bredcrumb-title">
             
