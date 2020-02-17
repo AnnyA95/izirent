@@ -383,3 +383,14 @@ div#totalPrice {
   top: 10p;
   bottom: 131px;
 }
+
+
+img.logocar {
+  width: 173px;
+  height: 51px;
+  content: url(../../Website/img/input-onlinepngtools\ \(1\).png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

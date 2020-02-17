@@ -109,7 +109,7 @@ body {
   }
 
   nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
-    padding-bottom: 5px;
+    padding-bottom: 9px;
     font-size: 20px;
     font-style: italic;
     border-radius: 0px;
@@ -257,7 +257,8 @@ hr#second {
 /*Logo width mobile */
 img.logo {
   width: 145px;
-     content:url("../../Website/img/input-onlinepngtools\ \(1\).png");
+  height: 52px;
+  content:url("http://izirent.be/img/finallogo.png");
   position: absolute;
    top: 50%;
    left: 50%;
@@ -360,7 +361,7 @@ and (orientation : portrait) {
   }
   img.logo {
     width: 133px;
-    content:url("../../Website/img/input-onlinepngtools\ \(1\).png");
+    content:url("http://izirent.be/img/finallogo.png");
     /* top: 50%; */
     left: 67%;
     /* transform: translate(-50%, -50%); */
@@ -382,7 +383,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   img.logo {
-    content:url("../../Website/img/input-onlinepngtools\ \(1\).png");
+    content:url("http://izirent.be/img/finallogo.png");
     width: 132px;
       left: 55%;
 }
@@ -485,4 +486,12 @@ img.featurette-image.img-fluid.mx-auto {
   width: auto;
   height: auto;
   max-width: -webkit-fill-available;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+   padding: 0px !important;
+  font-size: 18px;
+  line-height: 20px;
 }
