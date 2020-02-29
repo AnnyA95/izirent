@@ -286,18 +286,21 @@
                 <div class="radio">
                     <label class="lang" >
                       <input type="radio" checked="checked" class=" lang radio" onclick="calculateTotal()" name="selectedKM" value="125km"></label>
-                      <span class="lang " key='kmfirst'></span>
+                      <span id="first" class="lang" style="display:inline"  key='kmfirst'></span>
+                      <span id="four" style="display:none" class="lang " key='km3days'></span>
                   </div>
                   <div class="radio">
                     <label>
                       <input type="radio" class="radio" onclick="calculateTotal()" name="selectedKM" value="300km"></label>
-                    <span class="lang" key='kmsecond'></span>
+                    <span class="lang"  style="display:inline"  id=kmsecond key='kmsecond'></span>
+                    <span id="km3days300" style="display:none" class="lang" key='km3days300'></span>
                   </div>
                   <div class="radio">
                     <label>
                       <input type="radio" class="radio" onclick="calculateTotal()" name="selectedKM" value="Onbeperkt">
                     </label>
-                    <span class="lang " key='kmthird'></span>
+                    <span class="lang "  style="display:inline"  id=kmthird key='kmthird'></span>
+                    <span id="km3dayson" style="display:none" class="lang " key='km3dayson'></span>
                   </div>
               </div>
 
@@ -314,7 +317,7 @@
                            <div class="panel-body">
                             <h4>Options conseillées </h4>
                                 <div class="attributes resource-block">
-                                                        <span class="attribute-icon" style="float:left"><img class="img-way" src="../Website/img/imageorangehelp.png" alt=""></span>
+                                                        <span class="attribute-icon" style="float:left"><img class="img-way" src="http://izirent.be/img/imageorangehelp.png" alt=""></span>
 
                                 <label class="custom-block">
                                         <input type="checkbox" checked=checked value="ANWB Pechhulp door heel Europa" id="includeExtra" name="includeExtra" onclick="calculateTotal()" data-value-in="0" data-applicable="per_day" data-value="0" data-hourly-rate="0" data-currency-before="$" data-currency-after="" class="carrental_extras">
@@ -324,7 +327,7 @@
                                     
             </div>
             <div class="attributes resource-block">
-              <span class="attribute-icon" style="float:left"><img class="img-car" src="../Website/img/imagacaror.png" alt=""></span>
+              <span class="attribute-icon" style="float:left"><img class="img-car" src="http://izirent.be/img/imagacaror.png" alt=""></span>
 
           <label class="custom-block">
           <input type="checkbox" name="extras[]" onclick="calculateTotal()" id="includeExtraInsurance2"  name="includeExtraInsurance2" value="Verlagen eigen risico van €1900,- naar €1200 ( €17.00 - Per Dag )" data-name="Verlagen eigen risico van €1100,- naar €450" data-value-in="0" data-applicable="per_day" data-value="9.50" data-hourly-rate="0" data-currency-before="$" data-currency-after="" class="carrental_extras">
@@ -333,7 +336,7 @@
           </label>
           </div>
                                     <div class="attributes resource-block">
-                                      <span class="attribute-icon" style="float:left"><img class="img-car" src="../Website/img/imagacaror.png" alt=""></span>
+                                      <span class="attribute-icon" style="float:left"><img class="img-car" src="http://izirent.be/img/imagacaror.png" alt=""></span>
 
                                 <label class="custom-block">
                                   
@@ -360,7 +363,7 @@
                                     </label>
             </div>
                                     <div class="attributes resource-block">
-                                                        <span class="attribute-icon" style="float:left"><img class="img-navigation" src="../Website/img/imgsaaa.png" alt=""></span>
+                                                        <span class="attribute-icon" style="float:left"><img class="img-navigation" src="http://izirent.be/img/imgsaaa.png" alt=""></span>
 
                                 <label class="custom-block">
                                         <input type="checkbox" name="includeExtraNavi" onclick="calculateTotal()" checked=checked name="includeExtraNavi" value="Navigatiesysteem( €0.00 - Per Dag )" class="carrental_extras">

@@ -274,18 +274,83 @@ $(document).ready(function() {
       var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
            
       var KM = getCarKMPrice() 
-      
 
+      var first =  document.getElementById("first");
+      var four = document.getElementById("four");
+      var kmsecond =  document.getElementById("kmsecond");
+      var km3days300 = document.getElementById("km3days300")
+      var kmthird = document.getElementById("kmthird")
+      var km3dayson = document.getElementById("km3dayson")
 
       switch (KM) {
         case 55:
-          carPrice = 55
+          if(Difference_In_Days < 4){
+            first.style.display ='none'
+            four.style.display =  'inline'
+            kmsecond.style.display = 'none'
+            km3days300.style.display = 'inline'
+            kmthird.style.display = 'none'
+            km3dayson.style.display = 'inline'
+
+            carPrice = 85
+          }else{
+            first.style.display ='inline'
+            four.style.display =  'none'
+            kmsecond.style.display = 'inline'
+            km3days300.style.display = 'none'
+            kmthird.style.display = 'inline'
+            km3dayson.style.display = 'none'
+
+            carPrice = 55
+          }
+     
           break;
         case 75:
-          carPrice = 75
+          if(Difference_In_Days < 4){
+            kmsecond.style.display = 'none'
+            km3days300.style.display = 'inline'
+            first.style.display ='none'
+            four.style.display =  'inline'
+            kmthird.style.display = 'none'
+            km3dayson.style.display = 'inline'
+
+
+
+            carPrice = 105
+          }else{
+
+            kmsecond.style.display = 'inline'
+            km3days300.style.display = 'nonde'
+            kmthird.style.display = 'inline'
+            km3dayson.style.display = 'none'
+            first.style.display ='inline'
+            four.style.display =  'none'
+
+            carPrice = 75
+          }
           break;
         case 85:
-          carPrice = 85
+          if(Difference_In_Days < 4){
+            kmthird.style.display = 'none'
+            km3dayson.style.display = 'inline'
+            kmsecond.style.display = 'none'
+            first.style.display ='none'
+            four.style.display =  'inline'
+            km3days300.style.display = 'inline'
+
+   
+            carPrice = 115
+          }else{
+
+            kmsecond.style.display = 'inline'
+            km3days300.style.display = 'nonde'
+            kmthird.style.display = 'inline'
+            km3dayson.style.display = 'none'
+            first.style.display ='inline'
+            four.style.display =  'none'
+
+            carPrice = 85
+          }
           break;
         default:
           break;

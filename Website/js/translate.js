@@ -44,6 +44,7 @@ $(function() {
   
   function changeLanguage(lang){
   $('.lang').each(function(){
+
        $(this).text(arrLang[lang][$(this).attr('key')]);
   
    }); 
@@ -100,9 +101,13 @@ $(function() {
           'km' : "Forfait kilométrique",
           'extrakm' : "(forfait additionnel 0,23€ par km)",
           'kmfirst': "125 km par jour = € 55, p/j",
+          'km3days': "125 km par jour = € 85, p/j",
           'kmsecond': "300 km par jour = € 75, p/j",
+          'km3days300': "300 km par jour = € 105, p/j",
           'kmthird': "illimité km par jour  = € 85, p/j",
+          'km3dayson': "illimité km par jour  = € 115, p/j",
           'daylist': " - Par jour",
+
 
           'pech' :  'Assistance routière en Belgique et en Europe (€0.00 - Par jour)',
           'insure1' : 'Protection vol et collision - Réduction de franchise 1900€ à 550€ (€7.50 - Par jour)',
@@ -150,7 +155,8 @@ $(function() {
           'ctextbody': 'Veuillez contacter use en remplissant ce formulaire',
           'be' : 'Belgique',
           'send' : 'expédier',
-          'agrement': 'J’ai lu et j’accepte les conditions générales de location '
+          'agrement': 'J’ai lu et j’accepte les conditions générales de location ',
+          'contactadver' : 'Vous partez en vacances ? Il vous faut un moyen de déplacement pour vos évènements ? Vous êtes une société et avez besoin d’un véhicule pour votre personnel.'
       }, 
     
       nl: {
@@ -189,8 +195,11 @@ $(function() {
         'km' : "Kies kilometer",
         'extrakm' : "(extra km  € 0,23 per km)",
         'kmfirst': "125 km vrij per dag = € 55, p/d",
+        'km3days': "125 km vrij per dag = € 85, p/d",
         'kmsecond': "300 km vrij per dag = € 75, p/d",
+        'km3days300': "300 km vrij per dag = € 105, p/d",
         'kmthird': "Onbeperkt km per dag = € 85, p/d",
+        'km3dayson': "Onbeperkt km per dag = € 115, p/d",
         'daylist': " - Per Dag",
         'pech' : 'ANWB Pechhulp door heel Europa (€0.00 - Per Dag)',
         'insure1': 'Verlagen eigen risico van €1900,- naar €550 (€7.50 - Per Dag)' ,
@@ -238,7 +247,8 @@ $(function() {
         'ctextbody': 'Neem contact op door dit formulier in te vullen',
         'be' : 'België',
         'send' : 'Versturen',
-        'agrement': 'Ik heb de algemene voorwaarden gelezen en ga ermee akkoord '
+        'agrement': 'Ik heb de algemene voorwaarden gelezen en ga ermee akkoord ',
+        'contactadver' : "Wij maken dat mogelijk voor u. Autoverhuur Brussel met iziRent busverhuur. Met iziRent verhuur kunt u kiezen uit een breed scala aan auto's. Een autobus huren vanuit Brussel is nog nooit zo eenvoudig geweest."
         
     }
   }

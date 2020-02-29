@@ -6,4 +6,13 @@ footer {
     color: #f8f9fa!important
   }
 
+
+  .bg-primary {
+    background-color: #FFAE05!important;
+}
   
+.btn-primary {
+  color: #fff;
+  background-color: #FFAE05 !important;
+  border-color: #FFAE05 !important;
+}

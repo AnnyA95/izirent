@@ -1,6 +1,15 @@
 
   window.onscroll = function() {scrollFunction()};
 
+  window.onload = function() {
+    var elements = document.getElementsByClassName("lang btn btn-secondary s");
+  
+    for (i = 0; i < elements.length; i++) {
+      elements[i].classList.remove("active");
+    }
+  
+    
+  };
   
   function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
